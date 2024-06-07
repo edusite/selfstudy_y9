@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study Tools - Academic Diary</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="../style.css">
+   
+    <!-- FONTS -->
+    <link href="https://fonts.googleapis.com/css2?family=Amiri+Quran&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- HEADER START -->
+    <div class="header-section">
+        <div class="header-top">
+            <div class="header-left">
+                <a href="../index.html"><img class="logo" src="../images/lg1.png" alt="Academic Diary"
+                        title="Click here to return to the Home Page"></a>
+            </div>
+            <div class="header-middle">
+                <a href="../index.html"><img class="logo-text" src="../images/lg2.png" alt="Academic Diary"
+                        title="Click here to return to the Home Page"></a>
+            </div>
+            <div class="header-right">
+                <a href="sign.html" class="sign-btn">Sign in</a>
+                <i class="fa-solid fa-bars" id="menu-icon"></i>
+                <i class="fa-solid fa-xmark" id="close-icon"></i>
+            </div>
+        </div>
+        <div class="header-bottom" id="header-bottom">
+            <div class="header-navs" id="header-navs">
+                <ul class="navs" id="navs">
+                    <li><a href="../index.html">Home</a></li>
+                    <li>
+                        <a href="subjects.html">Subjects<i class="fa-solid fa-caret-down"></i></a>
+                        <div class="dropdown" id="dropdown">
+                            <ul>
+                                <li class="dropdown-link"><a href="subjects.html#biology">Biology</a></li>
+                                <li class="dropdown-link"><a href="subjects.html#chemistry">Chemistry</a></li>
+                                <li class="dropdown-link"><a href="subjects.html#physics">Physics</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="tools.html">Study Tools</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- HEADER_END -->
+
+    <div class="tools-body">
+        <!--MUSIC START-->
+        <div class="music-section">
+            <div class="music-wrap">
+                <h2>Study Music</h2>
+                <div class="music-container">
+                    <div class="music-info">
+                        <h5 id="title">Music title</h5>
+                        <div class="progress-container">
+                            <div id="progress"></div>
+                        </div>
+                    </div>
+                    <audio src="../audio/music1.mp3" id="audio"></audio>
+                    <div class="img-container">
+                        <img src="../images3/music1.jpg" alt="music-cover" title="Music Cover" id="cover">
+                    </div>
+                    <div class="navigation">
+                        <button id="prev" class="action-btn">
+                            <i class="fas fa-backward"></i>
+                        </button>
+                        <button id="play" class="action-btn action-btn-big">
+                            <i class="fas fa-play"></i>
+                        </button>
+                        <button id="next" class="action-btn">
+                            <i class="fas fa-forward"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--MUSIC END-->
+
+        <hr>
+
+        <!--TIMER START-->
+        <div class="timer-section">
+            <div class="timer-wrap">
+                <h2>Timer</h2>
+                <div class="time">
+                    <span class="hour">00</span>
+                    <span class="colon">:</span>
+                    <span class="minute">00</span>
+                    <span class="colon">:</span>
+                    <span class="second">00</span>
+                    <span class="colon ms-colon">:</span>
+                    <span class="millisecond">00</span>
+                </div>
+                <div class="buttons">
+                    <button class="start">Start</button>
+                    <button class="stop">Stop</button>
+                    <button class="reset">Reset</button>
+                </div>
+            </div>
+        </div>
+        <!--TIMER END-->
+
+        <hr/>
+
+        <!-- PLANNER START -->
+        <!-- modal -->
+        <div class="studyplanner-section">
+            <h2>Study Planner</h2>
+            <div class="modal" id="todo_form">
+                <div class="planner-header">
+                <div class="title">Add Todo</div>
+                <button class="btn close-modal">&times;</button>
+                </div>
+                <div class="planner-body">
+                <input type="text" id="todo_input" />
+                <input type="submit" value="Assign Now" id="todo_submit" />
+                </div>
+            </div>
+        </div>
+            
+            <!-- todo -->
+            <div class="todo-container">
+                <div class="inner-planner">
+                    <div class="status" id="no_status">
+                    <h1>Tasks</h1>
+                    <button id="add_btn" data-target-modal="#todo_form">+ Assign your task.</button>
+                    <div class="todo" draggable="true">
+                            You're doing an amazing job!
+                            <span class="close">&times;</span>
+                    </div>
+                    </div>
+                    <br/>
+                    <div class="status">
+                    <h1>Sunday</h1>
+                    </div>
+                    <br/>
+                    <div class="status">
+                    <h1>Monday</h1>
+                    </div>
+                    <br/>
+                    <div class="status">
+                    <h1>Tuesday</h1>
+                    </div>
+                </div>
+                <br/>
+                <div class="inner-planner">
+                    <div class="status">
+                    <h1>Wednesday</h1>
+                    </div>
+                    <br/>
+                    <div class="status">
+                    <h1>Thursday</h1>
+                    </div>
+                    <br/>
+                    <div class="status">
+                    <h1>Friday</h1>
+                    </div>
+                    <br/>
+                    <div class="status">
+                    <h1>Saturday</h1>
+                    </div>
+            </div>
+            </div>
+
+            <div id="overlay"></div>
+        </div>
+        <!-- PLANNER END -->
+    </div>
+
+
+    <!-- FOOTER_START -->
+    <div class="footer mt-5">
+        <div class="footer-wrap">
+            <div class="logo-wrap">
+                <div class="line">
+                </div>
+                <div class="logo">
+                    <a href="#"><img src="../images/AcademicDiary_Logo.png" alt="logo_footer" class="logo_footer"></a>
+                </div>
+                <div class="line">
+                </div>
+            </div>
+            <div class="footer_body">
+                <div class="links-wrap">
+                    <div class="links">
+                        <div class="links1">
+                            <a href="../index.html">Home</a><br />
+                            <a href="subjects.html">Subjects</a><br />
+                            <a href="events.html">Events</a>
+                        </div>
+                        <div class="links2">
+                            <a href="tools.html">Tools</a><br />
+                            <a href="about.html">About</a><br />
+                            <a href="../References.docx">Citations</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="social-media">
+                    <div class="icons">
+                        <a href="https://www.facebook.com/" class="text-light"><i
+                                class="fa-brands fa-facebook social-icons"></i></a>
+                        <a href="https://www.twitter.com/" class="text-light"><i
+                                class="fa-brands fa-twitter social-icons"></i></a>
+                        <a href="https://www.youtube.com/" class="text-light"><i
+                                class="fa-brands fa-youtube social-icons"></i></i></a>
+                        <a href="https://www.linkedin.com/" class="text-light"><i
+                                class="fa-brands fa-linkedin-in social-icons"></i></a>
+                    </div>
+                    <div class="line_vertical">
+                    </div>
+                </div>
+            </div>
+
+            <div class="msg-wrap">
+                <div class="msg_title">
+                    <label for="messageus">Message us!</label>
+                </div>
+                <div class="msg">
+                    <div class="input-group" id="input-group">
+                        <div class="input-group-area"><input type="text" placeholder="Your message."></div>
+                        <div class="input-group-icon"> <a href="">Send</a> </div>
+                      </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom text-center">
+                <div class="first-box">
+                    <a href="#">Terms & Conditions</a>
+                    <a href="#">Privacy Policy</a>
+                </div>
+                <div class="last-box">
+                    <a href="#">Copyright © 2023 AcademicDiary · All Rights Reserved</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- FOOTER_END -->
+
+    <script src="../javascript.js">
+
+    </script>
+
+    <script>
+        //Timer//
+
+        let hr = min = sec = ms = "0" + 0,
+            startTimer;
+
+        const startBtn = document.querySelector(".start");
+        const stopBtn = document.querySelector(".stop");
+        const resetBtn = document.querySelector(".reset");
+
+        startBtn.addEventListener("click", start);
+        stopBtn.addEventListener("click", stop);
+        resetBtn.addEventListener("click", reset);
+
+        function start() {
+            startBtn.classList.add('active');
+            stopBtn.classList.remove('stopActive');
+
+            startTimer = setInterval(() => {
+                ms++
+                ms = ms < 10 ? "0" + ms : ms;
+
+                if (ms == 100) {
+                    sec++;
+                    sec = sec < 10 ? "0" + sec : sec;
+                    ms = "0" + 0;
+                }
+                if (sec == 60) {
+                    min++;
+                    min = min < 10 ? "0" + min : min;
+                    sec = "0" + 0;
+                }
+                if (min == 60) {
+                    hr++;
+                    hr = hr < 10 ? "0" + hr : hr;
+                    min = "0" + 0;
+                }
+
+                putValue();
+            }, 10); //1000ms = 1s
+
+        }
+        function stop() {
+            startBtn.classList.remove('active');
+            stopBtn.classList.add('stopActive');
+            clearInterval(startTimer);
+        }
+        function reset() {
+            startBtn.classList.remove('active');
+            stopBtn.classList.remove('stopActive');
+            clearInterval(startTimer);
+            let hr = min = sec = ms = "0" + 0;
+            putValue();
+        }
+
+        function putValue() {
+            document.querySelector('.millisecond').innerText = ms;
+            document.querySelector('.second').innerText = sec;
+            document.querySelector('.minute').innerText = min;
+            document.querySelector('.hour').innerText = hr;
+        }
+
+
+        //Music//
+        const musicContainer = document.querySelector('.music-container');
+        const playBtn = document.querySelector('#play');
+        const prevBtn = document.querySelector('#prev');
+        const nextBtn = document.querySelector('#next');
+        const audio = document.querySelector('#audio');
+        const progress = document.querySelector('#progress');
+        const progressContainer = document.querySelector('.progress-container');
+        const title = document.querySelector('#title');
+        const cover = document.querySelector('#cover');
+
+        // Song titles
+        const songs = ['water', 'rain', 'birds', 'guitar', 'folklore1', 'folklore2', 'evermore1', 'evermore2', 'lofi1', 'lofi2'];
+
+        // Keep track of song
+        let songIndex = 0;
+
+        // Initially songs info DOM
+        loadSong(songs[songIndex]);
+
+        function loadSong(songs) {
+            title.innerText = songs;
+            audio.src = `../audio/${songs}.m4a`;
+            cover.src = `../images3/${songs}.jpg`;
+        }
+
+        function playSong() {
+            musicContainer.classList.add('play');
+            playBtn.querySelector('i.fas').classList.remove('fa-play');
+            playBtn.querySelector('i.fas').classList.add('fa-pause');
+
+            audio.play();
+        }
+
+        function pauseSong() {
+            musicContainer.classList.remove('play');
+            playBtn.querySelector('i.fas').classList.add('fa-play');
+            playBtn.querySelector('i.fas').classList.remove('fa-pause');
+
+            audio.pause();
+        }
+
+        function prevSong() {
+            songIndex--;
+
+            if (songIndex < 0) {
+                songIndex = songs.length - 1;
+            }
+
+            loadSong(songs[songIndex]);
+
+            playSong();
+        }
+
+        function nextSong() {
+            songIndex++;
+
+            if (songIndex > songs.length - 1) {
+                songIndex = 0;
+            }
+
+            loadSong(songs[songIndex]);
+
+            playSong();
+        }
+
+        function updateProgress(e) {
+            const { duration, currentTime } = e.srcElement;
+            const progressPercent = (currentTime / duration) * 100;
+            progress.style.width = `${progressPercent}%`;
+
+        }
+
+        function setProgress(e) {
+            const width = this.clientWidth;
+            const clickX = e.offsetX;
+            const duration = audio.duration;
+
+            audio.currentTime = (clickX / width) * duration;
+
+        }
+
+        //Event listeners
+        playBtn.addEventListener('click', () => {
+            const isPLaying = musicContainer.classList.contains('play');
+
+            if (isPLaying) {
+                pauseSong();
+            }
+            else {
+                playSong();
+            }
+        })
+
+        //Change song events
+        prevBtn.addEventListener('click', prevSong);
+        nextBtn.addEventListener('click', nextSong);
+
+        audio.addEventListener('timeupdate', updateProgress);
+        progressContainer.addEventListener('click', setProgress);
+
+        audio.addEventListener('ended', nextSong);
+
+        // PLANNER START
+        const todos = document.querySelectorAll(".todo");
+        const all_status = document.querySelectorAll(".status");
+        let draggableTodo = null;
+
+        todos.forEach((todo) => {
+        todo.addEventListener("dragstart", dragStart);
+        todo.addEventListener("dragend", dragEnd);
+        });
+
+        function dragStart() {
+        draggableTodo = this;
+        setTimeout(() => {
+            this.style.display = "none";
+        }, 0);
+        console.log("dragStart");
+        }
+
+        function dragEnd() {
+        draggableTodo = null;
+        setTimeout(() => {
+            this.style.display = "block";
+        }, 0);
+        console.log("dragEnd");
+        }
+
+        all_status.forEach((status) => {
+        status.addEventListener("dragover", dragOver);
+        status.addEventListener("dragenter", dragEnter);
+        status.addEventListener("dragleave", dragLeave);
+        status.addEventListener("drop", dragDrop);
+        });
+
+        function dragOver(e) {
+        e.preventDefault();
+        //   console.log("dragOver");
+        }
+
+        function dragEnter() {
+        this.style.border = "1px dashed #ccc";
+        console.log("dragEnter");
+        }
+
+        function dragLeave() {
+        this.style.border = "none";
+        console.log("dragLeave");
+        }
+
+        function dragDrop() {
+        this.style.border = "none";
+        this.appendChild(draggableTodo);
+        console.log("dropped");
+        }
+
+        /* modal */
+        const btns = document.querySelectorAll("[data-target-modal]");
+        const close_modals = document.querySelectorAll(".close-modal");
+        const overlay = document.getElementById("overlay");
+
+        btns.forEach((btn) => {
+        btn.addEventListener("click", () => {
+            document.querySelector(btn.dataset.targetModal).classList.add("active");
+            overlay.classList.add("active");
+        });
+        });
+
+        close_modals.forEach((btn) => {
+        btn.addEventListener("click", () => {
+            const modal = btn.closest(".modal");
+            modal.classList.remove("active");
+            overlay.classList.remove("active");
+        });
+        });
+
+        window.onclick = (event) => {
+        if (event.target == overlay) {
+            const modals = document.querySelectorAll(".modal");
+            modals.forEach((modal) => modal.classList.remove("active"));
+            overlay.classList.remove("active");
+        }
+        };
+
+        /* create todo  */
+        const todo_submit = document.getElementById("todo_submit");
+
+        todo_submit.addEventListener("click", createTodo);
+
+        function createTodo() {
+        const todo_div = document.createElement("div");
+        const input_val = document.getElementById("todo_input").value;
+        const txt = document.createTextNode(input_val);
+
+        todo_div.appendChild(txt);
+        todo_div.classList.add("todo");
+        todo_div.setAttribute("draggable", "true");
+
+        /* create span */
+        const span = document.createElement("span");
+        const span_txt = document.createTextNode("\u00D7");
+        span.classList.add("close");
+        span.appendChild(span_txt);
+
+        todo_div.appendChild(span);
+
+        no_status.appendChild(todo_div);
+
+        span.addEventListener("click", () => {
+            span.parentElement.style.display = "none";
+        });
+        //   console.log(todo_div);
+
+        todo_div.addEventListener("dragstart", dragStart);
+        todo_div.addEventListener("dragend", dragEnd);
+
+        document.getElementById("todo_input").value = "";
+        todo_form.classList.remove("active");
+        overlay.classList.remove("active");
+        }
+
+        const close_btns = document.querySelectorAll(".close");
+
+        close_btns.forEach((btn) => {
+        btn.addEventListener("click", () => {
+            btn.parentElement.style.display = "none";
+        });
+        });
+    </script>
+
+
+</body>
+
+</html>

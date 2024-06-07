@@ -1,0 +1,4646 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*HEADER START*/
+.header-section{
+    width: 100%;
+    background-color: #388087;
+    padding: 1.2rem;
+    z-index: 2;
+    height: 10.2rem;
+}
+.header-top{
+    width: 95%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.2rem;
+}
+.header-left .logo{
+    height: 6rem;
+    transition: all 0.6s ease-in-out;
+}
+.header-middle .logo-text{
+    height: 6rem;
+}
+.header-right .sign-btn{
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 0.8rem 1.4rem;
+    background-color: transparent;
+    border: 2px solid #F6F6F2;
+    border-radius: 2rem;
+    margin-right: 1rem;
+    color: #F6F6F2;
+    text-transform: uppercase;
+    font-weight: 500;  
+    font-family: 'Didact Gothic', sans-serif;  
+}
+.header-right .sign-btn:hover{
+    background-color: #6FB3B8;
+}
+#menu-icon{
+    font-size: 1.6rem;
+    color: #F6F6F2;
+    cursor: pointer;
+    display: none;
+}
+#close-icon{
+    font-size: 1.8rem;
+    color: #F6F6F2;
+    cursor: pointer;
+    display: none;
+}
+.header-bottom{
+    width: 60%;
+    margin: auto;
+}
+.header-bottom .header-navs > ul{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin-bottom: 0;
+    padding: 0;
+}
+.header-bottom .header-navs > ul li{
+    margin: 0 1.2rem;
+    position: relative;
+    text-align: center;
+}
+.header-bottom .header-navs > ul li i{
+    margin-left: 0.8rem;
+}
+.header-bottom .header-navs > ul li a{
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    font-family: 'Amiri Quran', serif;
+    text-decoration: none;
+    color: #F6F6F2;
+    font-size: 1.2rem;    
+}
+.header-bottom .header-navs ul li a:hover{
+    font-weight: 600;
+}
+.dropdown{
+    display: block;
+    position: absolute;
+    top: 8%;
+    left: 0%;
+    width: 8.5rem;
+    background-color: #6FB3B8;
+    z-index: 2;
+    transform: translateY(5px);
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.3s;
+}
+/* #sign-dropdown{
+    background-color: #388087;
+}
+#sign-dropdown:before{
+    background-color: #388087;
+} */
+.dropdown:before{
+    content: "";
+    position: absolute;
+    top: -4%;
+    left: 30%;
+    width: 12px;
+    height: 12px;
+    display: block;
+    border-radius: 2px;
+    transform: rotate(45deg);
+    background-color: #6FB3B8;
+}
+.dropdown > ul{
+    list-style-type: none;
+    padding: 0; 
+    color: #388087;   
+}
+.header-navs ul li:hover > .dropdown,
+.dropdown-link:hover > .dropdown{
+    transform: translate(0, 0);
+    opacity: 1;
+    pointer-events: auto;
+}
+.dropdown-link{    
+    padding: 0.4rem 0;
+    margin: 0;
+    border-bottom: 1px solid #F6F6F2;
+}
+.dropdown-link ul li a{
+    color: #1D4145;
+}
+#header-bottom #header-navs ul{
+    margin-top:-13px;
+}
+#dropdown{
+    top: 112%;
+    left: -20%;
+}
+/*HEADER END*/
+
+/* SLIDER START */
+#slider h1, #slider h2{
+    font-family: 'Amiri Quran', serif;
+}
+#slider p, #slider a{
+    font-family: 'Didact Gothic', sans-serif;
+}
+.carousel-item{
+    width: 100vw;
+    height: 78vh;
+    background: #C2EDCE;
+    z-index: 0;
+}
+#carousel-indicators{
+    z-index: 1;
+}
+#slogan-slider{
+    background-image: linear-gradient(rgba(25, 25, 25, 0.6), rgba(25, 25, 25, 0.6)), url(images/bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    text-align: center;
+  color: #F6F6F2; 
+}
+#slogan-slider h1{
+  position: absolute;
+  top: 30%;
+    text-transform: uppercase; 
+    font-size: 3.9rem;  
+}
+#slogan-slider p{
+  position: absolute;
+  top: 48%;
+  font-size: 1.7rem;     
+}
+#slogan-slider a{
+    position: absolute;
+  top: 65%;
+    padding: 0.7rem 2.2rem;
+    background:  linear-gradient(rgba(208, 208, 208, 0.3), rgba(208, 208, 208, 0.3));
+    border: 1px solid #F6F6F2;
+    border-radius: 2rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #F6F6F2;
+    font-size: 1rem;
+}
+#slogan-slider a:hover{
+    background-color: #f6f6f2;
+    color: #000000;
+    border: 1px solid #000000;
+    transition: .2s;
+}
+#subject-slider{
+    background-color: #BADFE7;
+    padding: 6% 15%;
+    position: relative;
+}
+.subject-slider-content{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.subject-slider-content h2{
+    font-size: 3.5rem;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+    font-style: italic;
+    color: #1D4145;
+}
+#subject-slider img{
+    width:55%;
+    float: right;
+    margin-top: 0;
+}
+.sub_slider{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.sub-btn{
+    text-decoration: none;
+    color: #f6f6f2;
+    font-size: 1.15rem;
+    padding: 0.6rem 2rem;
+    background-color: #6FB3B8;
+    text-decoration: none;
+    color: #f6f6f2;
+    width: 10.5vw;
+    text-transform: uppercase;
+}
+.sub-btn:hover{
+    padding: 0.6rem 2rem;
+    background-color: #388087;
+    text-decoration: none;
+    transition: .3s;
+    color: #fff;
+}
+#event-slider{
+    background-color: #BADFE7;
+    padding: 5% 12%;
+}
+#event-slider img{
+    width: 38%;
+    border-radius: 20px;
+    float: left;
+    margin-right: 5rem;
+}
+.event-slider-content h2{
+    margin-top: 2.8rem;
+    font-size: 2.2rem;
+    color: #1D4145;
+}
+.event-slider-content p{
+    margin: 1.5rem 0 3.5rem;
+    font-size: 1.2rem;    
+}
+.event-slider-content a{
+    padding: 0.6rem 2rem;
+    background-color: #6FB3B8;
+    text-decoration: none;
+    color: #f6f6f2;
+    text-transform: uppercase;
+}
+.event-slider-content a:hover{
+    padding: 0.6rem 2rem;
+    background-color: #388087;
+    text-decoration: none;
+    transition: .3s;
+    color: #fff;
+}
+/* SLIDER END */
+
+/*PURPOSE START*/
+.purpose-section{
+    width: 100%;
+    background-color: #F6F6F2;
+    box-shadow: 1px 1px 30px #388087;
+}
+.purpose-section h2{
+    color: #388087;
+    margin-bottom: 1.5rem;
+}
+.purpose-body{
+    width: 100%;
+    display: flex;
+    align-items: center;      
+}
+.purpose-text{
+    text-align: justify;
+    line-height: 1.9rem;
+    font-size: 1.15rem;
+    padding: 1.5rem;
+    width: 60%;
+    margin: 0 4rem;
+}
+.purpose-text h2{
+    font-family: 'Amiri Quran', serif;
+}
+.purpose-text p{
+    font-family: 'Didact Gothic', sans-serif;
+}
+.purpose-img img{
+    width: 50vw;
+    height: auto;
+}
+/*PURPOSE END*/
+
+/*TIMELINE START*/
+.timeline-section{
+    font-size: 14px;
+    font-weight: 500px;
+    font-family: 'Poppins', sans-serif;
+    background-color: #F6F6F2;
+    color: #388087;
+    padding: 40px 20px;
+}
+.timeline-container{
+    max-width: 1100px;
+    margin: 0 auto;
+}
+h1, h3{
+    font-weight: 600;
+}
+.timeline-container .title{
+    text-align: center;
+    padding: 10px 0;
+    font-size: 40px;
+    margin-bottom: 40px;
+    font-family: 'Amiri Quran', serif;
+}
+.timeline-content p, .timeline-content a{
+    font-family: 'Didact Gothic', sans-serif;
+}
+.timeline-content h2{
+    font-family: 'Amiri Quran', serif;
+    font-size: 25px;
+}
+#timeline{
+    position: relative;
+    font-size: 14px;
+    width: 90%;
+    margin: 30px auto;
+    line-height: 24px;
+    transition: all 0.3s;
+}
+#timeline::before{
+    content: "";
+    width: 4px;
+    height: 80%;
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    background-color: #388087;
+}
+#timeline .timeline-item{
+    position: relative;
+    margin-bottom: 30px;    
+}
+#timeline .timeline-item .timeline-icon{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    margin-left: -23px;
+    padding: 12px;
+    background-color: #388087;
+    color: #F6F6F2;
+    font-size: 24px;
+}
+#timeline .timeline-item .timeline-content{
+    position: relative;
+    width: 45.5%;
+    padding: 20px;    
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    background-color: #fff;
+    transition: all 0.3s;
+}
+#timeline .timeline-item .timeline-content::before{
+    content: "";
+    position: absolute;
+    top: 20px;
+    right: -5px;
+    width: 15px;
+    height: 15px;
+    display: block;
+    border-radius: 2px;
+    transform: rotate(45deg);
+    background-color: #388087;
+}
+#timeline .timeline-item .timeline-content h2{
+    padding: 15px;
+    margin: -20px -20px 0 -20px;
+    color: #F6F6F2;
+    font-weight: 500px;
+    border-radius: 3px 3px 0 0;
+    background-color: #388087;
+}
+#timeline .timeline-item .timeline-content p{
+    margin: 12px 0;
+}
+#timeline .timeline-item .btn{
+    position: relative;
+    display: inline-block;
+    padding: 5px 15px;    
+    background: transparent;
+    border: 2px solid #388087;
+    border-radius: 5px;
+    color: #388087;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 12px;   
+    font-weight: 600;
+    transition: all 0.3s; 
+    box-shadow: 2px 2px #388087; 
+}
+#timeline .timeline-item .btn:hover{
+    box-shadow: none;
+    top: 2px;
+    left: 2px;
+}
+#timeline .timeline-item .timeline-content.right{
+    float: right;
+}
+#timeline .timeline-item .timeline-content.right::before{
+    left: -5px;
+    right: inherit;
+}
+#timeline .timeline-item::before,
+#timeline .timeline-item::after{
+    content: "";
+    display: block;
+    width: 100%;
+    clear: both;
+}
+/*TIMELINE END*/
+
+/* FOOTER START */
+.footer{
+  background: #388087;
+  padding-top: 3%;
+    font-family: 'Amiri Quran', serif;
+}
+.logo_footer{
+  width: 10rem;
+}
+.line{
+  margin-bottom: 10px;
+    width: 40vw;
+    height: 1px;
+    background: #F6F6F2;
+    margin-top: 4%;
+}
+.logo-wrap, .icons{
+  display: flex;
+}
+.logo-wrap{
+  justify-content: space-between;
+}
+.social-media{
+  margin: 2rem;
+}
+.social-media .icons{
+  font-size: 1.8rem;
+  justify-content: space-between;
+  width: 18%;
+}
+.social-media .icons a i:hover{
+    color: #BADFE7;
+}
+.icons, .line_vertical{
+  margin: auto;
+}
+
+.line_vertical{
+  width: 1.5px;
+  background: #F6F6F2;
+  height: 11vh;
+  margin-top: 2%;
+}
+.messageus{
+  width: 100%;
+  padding: 0;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+}
+.msg_title{
+  text-align: center;
+  font-size: 1.4rem;
+  color: #F6F6F2;
+  margin-top: 2%;
+}
+.msg .input-group input[type=text]{
+    padding: 0.8rem 1rem;
+    border: none;
+    border-radius: 5px;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+}
+.footer_body{
+  position: relative;
+}
+.links{
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  position: absolute;
+  margin-top: 3rem;
+    font-family: 'Amiri Quran', serif;
+}
+.links a{
+  text-decoration: none;
+  color: #F6F6F2;
+}
+.links a:hover{
+  color: #F6F6F2;
+    font-weight: 600;
+}
+.links1, .links2{
+  line-height: 2.8rem;
+  font-size: 1.4rem;
+}
+.links1{
+  margin-right: 20%;
+}
+.msg{
+  width: 30%;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+.footer-bottom{
+    background: #F6F6F2;
+    width: 100%;
+  margin-top: 2.3rem;
+  padding: 0.4rem;
+}
+.footer-bottom a{
+    color: #388087;
+    font-size: 1rem;
+    margin-left: 20px;
+    text-decoration: none;
+}
+.footer-bottom a:hover{
+  color: #388087;
+}
+.footer i{
+    color: white;
+}
+.footer-bottom{
+    text-align: center;
+}
+#input-group{
+    display: table;
+    border-collapse: collapse;
+    width:100%;
+  }
+  #input-group > div{
+    display: table-cell;
+    vertical-align: middle;  /* needed for Safari */
+  }
+  .input-group-icon a{
+    background: none;
+    padding: 3px 12px;
+    border: 1px solid #F6F6F2;
+    border-top-right-radius: 5px !important;
+    border-bottom-right-radius: 5px !important;
+  }
+  .input-group-area{
+    width:100%;
+  }
+  #input-group input{
+    border: 0;
+    display: block;
+    width: 100%;
+    padding: 15.5px;
+    border-radius: 0%;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+  }
+  #input-group .input-group-icon a{
+    color: #f6f6f2;
+    text-decoration: none;
+  }
+/* FOOTER END */
+
+/*SUBJECTS CATEGORY START*/
+.subcategory-body{
+    width: 100%;
+    background-color: #F6F6F2;
+    padding: 5% 5%;
+}
+.bio-section, .chem-section{
+    margin-bottom: 2rem;
+}
+.subcategory-body h2{
+    font-family: 'Amiri Quran', serif;
+    color: #388087;
+    font-size: 2em;
+}
+.subcategory-body .unit-img img{
+    width: 19.25rem;
+    height: 19.25rem;
+}
+.unit-wrap{
+   display: flex;
+   justify-content: center;
+}
+.unit-body{
+    display: flex;
+    margin: 3rem 0;
+    background-color: #BADFE7;
+}
+.unit-left{
+    display: flex;
+    position: relative;
+}
+.unit-body a{
+    color: #f6f6f2;
+    text-decoration: none;
+}
+.unit-body a p{
+    color: #f6f6f2;
+}
+.unit-text{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 19.25rem;
+    height: 19.25rem;
+    background: rgba(0, 0, 0, 0.7);
+    color: #f6f6f2;
+    font-family: 'Didact Gothic', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.5s;
+    text-align: center;
+    font-size: 1.2rem;
+}
+.unit-text > *{
+    transform: translateY(20px);
+    transition: transform 0.5s;
+}
+.unit-text:hover{
+    opacity: 0.8;
+}
+.unit-text:hover > *{
+    transform: translateY(0);
+}
+.unit-text:hover{
+    background: #1D4145;
+    transition: 1s;
+}
+.unit-right{
+    padding: 2rem 3rem;
+    font-family: 'Didact Gothic', sans-serif;
+}
+.unit-right a h3{
+    font-size: 1.7rem; 
+    color: #1D4145;
+}
+.unit-right a p{
+    margin-bottom: 7px;
+    font-size: 1.2rem;
+    color: #1D4145;
+}
+.unit-right a p:hover{
+    text-shadow: 1.5px 1.5px #6FB3B8;
+}
+/*SUBJECTS CATEGORY END*/
+
+/*ABOUT START*/
+.about-container{
+    background-color: #F6F6F2;
+}
+.aboutus-section{
+    width: 100%;
+    padding: 5rem 0;
+}
+.aboutus-wrap{
+    width: 75%;
+    margin: auto;
+    display: flex;
+}
+.about-content{
+    margin-right: 5rem;
+    padding: 2rem 0;
+}
+.about-content h2, .team-title{
+    text-align: center;
+    font-family: 'Amiri Quran', serif;
+    color: #388087;
+    font-size: 2.8rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 1.3rem;
+}
+.about-content hr, #team-title-hr{
+    width: 20%;
+    margin: auto;
+    border: 1px solid #333;
+}
+.about-content p{
+    margin-top: 2.5rem;
+    text-align: center;
+    font-size: 1.3rem;
+    line-height: 2.1rem;
+    font-family: 'Didact Gothic', sans-serif; 
+    letter-spacing: 0.25px;
+    text-align: justify;
+    text-indent: 3rem;
+}
+.aboutus-section img{
+    width: 45%;
+    height: 100%;
+}
+/*ABOUT END*/
+
+/*TEAM START*/
+.memb-conatiner{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f6f6f2;
+    flex-wrap: wrap;
+}
+.members-card{
+    position: relative;
+    width: 220px;
+    height: 180px;
+    background: #BADFE7;
+    padding: 30px;
+    border-radius: 5%;
+    box-shadow: 0 0 13px #388087;
+    transition: .6s;
+    margin: 0 25px;
+}
+.members-card::after {
+    position: absolute;
+    z-index: 1;
+}
+.members-card:hover{
+    border-radius: 10px;
+    height: 260px;
+}
+.members-card .memb-img{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: .6s;
+    z-index: 99;
+}
+.members-card:hover .memb-img{
+    transform: translateY(-60px);
+}
+.memb-img img{
+    width: 100%;
+    border-radius: 5%;
+    box-shadow: 0 0 22px #3336;
+    transition: .6s;
+}
+.members-card:hover img{
+    border-radius: 10px;
+}
+.memb-cap{
+    text-align: center;
+    transform: translateY(-120px);
+    opacity: 0;
+    transition: .6s;
+}
+.members-card:hover .memb-cap{
+    opacity: 1;
+}
+.team-title{
+    margin-top: 3rem;
+}
+.memb-cap h3{
+    font-size: 21px;
+    font-family: 'Amiri Quran', serif;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: #1D4145;
+}
+.memb-cap p{
+    font-size: 16px;
+    color: #388087;
+    margin: 2px 0 9px 0;
+    font-family: 'Didact Gothic', sans-serif;
+}
+.memb-cap .memb-social a{
+    color: #333;
+    margin-right: 8px;
+    font-size: 21px;
+    transition: .6s;
+}
+.memb-social a:hover{
+    color: #388087;
+}
+/*TEAM END*/
+
+/*SIGN* ART*/
+.sign-container{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    background-color: #F6F6F2;
+    overflow: hidden;
+    font-family: 'Poppins', sans-serif;
+    z-index: 0;
+}
+.sign-container:before{
+    content:  '';
+    position: absolute;
+    width: 2000px;
+    height: 2000px;
+    border-radius: 1000px;
+    background: linear-gradient(-45deg, #6FB3B8, #6FB3B8);
+    top: -10%;
+    right: 48%;
+    transform: translateY(-50%);
+    z-index: 6;
+    transition: 1.5s ease-in-out;
+}
+.sign-container .forms-container{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+.signin-signup{
+    position: absolute;
+    top: 50%;
+    left: 75%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    display: grid;
+    grid-template-columns: 1fr;
+    z-index: 5;
+    transition: 1s 0.7s ease-in-out;
+}
+.sign-container form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 80px;
+    overflow: hidden;
+    flex-direction: column;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    transition: 0.2s 0.7s ease-in-out;
+    font-family: 'Didact Gothic', sans-serif;
+}
+.sign-container form.sign-in-form{
+    z-index: 2;
+}
+.sign-container form.sign-up-form{
+    z-index: 1;
+    opacity: 0;
+}
+.sign-container .title{
+    font-size: 2.6rem;
+    color: #388087;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    font-family: 'Amiri Quran', serif;
+}
+.sign-container .input-field{
+    max-width: 380px;
+    width: 100%;
+    height: 55px;
+    background-color: #f0f0f0;
+    margin: 10px 0;
+    border-radius: 28px;
+    display: grid;
+    grid-template-columns: 15% 85%;
+    padding: 0 4px;
+}
+.sign-container .input-field i{
+    text-align: center;
+    line-height: 55px;
+    color: #acacac;
+    font-size: 17.5px;
+}
+.sign-container .input-field input{
+    background: none;
+    border: none;
+    outline: none;
+    line-height: 1;
+    font-size: 17.5px;
+    font-weight: 600;
+    color: #333;
+}
+.sign-container .input-field input::placeholder{
+    color: #acacac;
+    font-weight: 500;
+}
+.sign-container .btn{
+    width: 150px;
+    height: 50px;
+    border: none;
+    outline: none;
+    border-radius: 25px;
+    background-color: #6FB3B8;
+    color: #F6F6F2;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin: 10px 0;
+    cursor: pointer;
+    transition: .5s;
+}
+.sign-container .btn:hover{
+    background-color: none;
+    border: 2px solid #388087;
+    color: #388087;
+    transition: 1s;
+}
+.sign-container .social-text{
+    padding: 11px;
+    font-size: 16px;
+    color: #388087;
+}
+.sign-container .social-media{
+    display: flex;
+    justify-content: center;
+}
+.social-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 46px;
+    height: 46px;
+    border: 1px solid #6FB3B8;
+    margin: 0 6px;
+    text-decoration: none;
+    color: #6FB3B8;
+    font-size: 17.5px;
+    border-radius: 23px;
+    transition: 0.3s;    
+}
+.social-icon:hover{
+    color: #388087;
+    border-color: #388087;
+}
+.panels-container{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.panel{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-around;
+    text-align: center;
+    z-index: 7;
+}
+.left-panel{
+    padding: 48px 18% 32px 12%;
+    pointer-events: all;
+}
+.right-panel{
+    padding: 48px 12% 32px 18%;
+    pointer-events: none;
+}
+.panel .content{
+    color: #F6F6F2;
+    transition: 0.9s 0.6s ease-in-out;
+}
+.panel h3{
+    line-height: 1;
+    font-size: 1.8rem;
+    font-family: 'Amiri Quran', serif;
+    text-transform: uppercase;
+}
+.panel p{
+    font-size: 15px;
+    padding: 11px 0;
+    font-family: 'Didact Gothic', sans-serif;
+}
+.btn.transparent{
+    margin: 0;
+    background: none;
+    border: 2px solid #F6F6F2;
+    width: 130px;
+    height: 42px;
+    font-size: 0.9rem;
+    font-family: 'Didact Gothic', sans-serif;
+}
+.btn.transparent:hover{
+    letter-spacing: 1px;
+    background-color: #388087;
+    color: #f6f6f2;
+}
+.sign-image{
+    width: 100%;
+    transition: 1.1s 0.5s ease-in-out;
+}
+.right-panel .content, .right-panel .sign-image{
+    transform: translateX(800px);
+}
+
+/* Animation */
+.sign-container.sign-up-mode:before{
+    transform: translate(100%, -50%);
+    right: 52%;
+}
+.sign-container.sign-up-mode .left-panel .sign-image,
+.sign-container.sign-up-mode .left-panel .content{
+    transform: translateX(-800px);
+}
+.sign-container.sign-up-mode .right-panel .sign-image,
+.sign-container.sign-up-mode .right-panel .content{
+    transform: translateX(0px);
+}
+.sign-container.sign-up-mode .left-panel{
+    pointer-events: none;
+}
+.sign-container.sign-up-mode .right-panel{
+    pointer-events: all;
+}
+.sign-container.sign-up-mode .signin-signup{
+    left: 25%;
+}
+.sign-container.sign-up-mode form.sign-in-form{
+    z-index: 1;
+    opacity: 0;
+}
+.sign-container.sign-up-mode form.sign-up-form{
+    z-index: 2;
+    opacity: 1;
+}
+/*SIGN END*/
+/*Bio Unit1_START*/
+.bio_1 {
+    background-color: #F6F6F2;
+    padding: 3% 0;
+}
+.bio_1 .leftfig {
+    float: left;
+    clear: both;
+}
+.bio_1 .rightfig{
+    float: right;
+    clear: both;
+}
+.bio_1 figcaption {
+    font-size: 1rem;
+    font-style: italic;
+}
+.bio_1 .note{
+    background-color: #BADFE7;
+    border: 1px solid black;
+    border-radius: 7px;
+    width: 45%;
+}
+.bio_1 .photosynthesis, .starch, .mineral-salt, .plant-water, .flower, .pollination, .fertilisation, .double-fertilisation, .pollen-formation, .seed-structure, .fruits{
+    padding: 3% 0;
+}
+.bio_1 h1,
+h2, h3 {
+    font-family: 'Amiri Quran', serif;
+}
+.bio_1 h5 {
+    font-family: 'Didact Gothic', sans-serif;
+}
+.bio_1 p {
+    font-family: 'Didact Gothic', sans-serif;
+    font-size: 1.3rem;
+    margin-bottom: 0;
+}
+.bio_1 .photosynthesis_pic, .flower_pic{
+    width: 45vw;
+}
+.bio_1 .starch_pic, .mineral-salt_pic, .support_pic, .water-photosynthesis_pic{
+    width: 39vw;
+}
+.bio_1 .transport_pic, .double-fertilisation_pic{
+    width: 30vw;
+}
+.bio_1 .seed-dispersal_pic{
+    width: 33vw;
+}
+.bio_1 .cooling_pic, .wind-pollinated_pic{
+    width: 36vw;
+}
+.bio_1 .seed-structure_pic{
+    width: 28vw;
+}
+.bio_1 .mineral-salt_cap{
+    width: 39vw;
+}
+.bio_1 .starch-note{
+    margin: auto;
+}
+.bio_1 .water-for{
+    margin: 2% 0;
+}
+.bio_1 .support_content, .double-fertilisation_content, .double-fertilisation_vid{
+    padding: 4% 0;
+}
+.bio_1 .pollen-formation_content{
+    padding: 7% 0;
+}
+.bio_1 .transport_content{
+    padding: 11% 0;
+}
+.bio_1 .water-photosynthesis_content{
+    padding: 12% 0;
+}
+.bio_1 .cooling_content{
+    padding-top: 10%;
+    padding-bottom: 12%;
+}
+/*Bio Unit1_END*/
+/*Bio Unit 2_START*/
+#bun_2{
+    background-color: #F6F6F2;
+    padding: 3% 6%;
+}
+.bun_2 h1, h2{
+    font-family: 'Amiri Quran', serif;
+}
+.bun_2 h5{
+    font-family: 'Didact Gothic', sans-serif;
+}
+.bun_2 p{
+    font-family: 'Didact Gothic', sans-serif;
+    font-size: 1.3rem;
+    margin-bottom: 0;
+}
+.bun_2 .note{
+    background-color: #BADFE7;
+    border: 1px solid black;
+    border-radius: 7px;
+    width: 45%;
+}
+.bun_2 .pop-note{
+    width: 90%;
+}
+.bun_2 .plant_sec, .animal_sec, .sts_sec{
+    padding-bottom: 5rem;
+}
+.bun_2 .spruce, .oryx{
+    width: 19vw;
+}
+.bun_2 .earthworm{
+    width: 27vw;
+}
+.bun_2 .pollution{
+    width: 34vw;
+}
+.bun_2 .sealion{
+    width: 34vw;
+    margin-top: 3rem;
+}
+.bun_2 .eagle{
+    width: 39vw;
+    margin-top: 3rem;
+}
+.bun_2 .leftfig, .bun_2 .clearfix .fungus{
+    margin-right: 2rem;
+}
+.bun_2 .stranglerfig, .wetland, .coralreef, .ramsar, .ozone, .sunlight{
+    width: 38vw;
+}
+.bun_2 .symbiosis{
+    width: 34vw;
+}
+.bun_2 .rainforest, .habitat, .population{
+    width: 28vw;
+}
+.bun_2 .decomposer{
+    width: 23vw;
+}
+.bun_2 .weed, .foodchain{
+    width: 31vw;
+}
+.plant_sec .leftfig_weed{
+    float: left;
+    clear: both;
+}
+.bun_2 .leftfig{
+    float: left;
+    clear: both;
+}
+.bun_2 .rightfig{
+    float: right;
+    clear: both;
+}
+.bun_2 figcaption{
+    font-style: italic;
+    font-size: 1rem;
+}
+.bun_2 .fungus-sec{
+    padding-top: 5.5rem;
+}
+.bun_2 .preserve{
+    padding-bottom: 7rem;
+}
+.bun_2 .fertilizer, .rainforest-div{
+    padding-bottom: 10%;
+}
+.bun_2 .ozone{
+    margin-top: 2%;
+}
+/*Bio Unit 2_END*/
+
+/*Bio Unit 3_START*/
+#bio3_main {
+    background-color: #F6F6F2;
+    padding: 3% 6%;
+}
+
+.bio3_main h1,
+h2 {
+    font-family: 'Amiri Quran', serif;
+}
+
+.bio3_main h5 {
+    font-family: 'Didact Gothic', sans-serif;
+}
+
+.bio3_main p {
+    font-family: 'Didact Gothic', sans-serif;
+    font-size: 1.3rem;
+    margin-bottom: 0;
+}
+
+.bio3_main .leftfig {
+    float: left;
+    clear: both;
+}
+
+.bio3_main .rightfig {
+    float: right;
+    clear: both;
+}
+
+.bio3_main .dna_pic,
+.sheep_pic {
+    width: 30vw;
+}
+
+.bio3_main .chromosome_pic {
+    width: 35vw;
+}
+
+.bio3_main .chromosomepairs_pic,
+.keytype1_pic,
+.classification_pic,
+.variation_pic,
+.giraffe_pic {
+    width: 40vw;
+}
+
+.bio3_main .chromosome-onepair_pic {
+    width: 13vw;
+}
+
+.bio3_main .keytype2_pic,
+.environment_pic,
+.buffalo_pic,
+.wheat_pic,
+.moth_pic {
+    width: 39vw;
+}
+
+.bio3_main .bacteria_pic {
+    width: 37vw;
+}
+
+.bio3_main .genes_pic {
+    height: 26vw;
+}
+
+.bio3_main .leftfig {
+    margin-right: 3rem;
+}
+
+.bio3_main .gene,
+.chromosome,
+.keys,
+.variation,
+.classification_content,
+.species_content,
+.inheritance,
+.genes_content,
+.environment_content,
+.more_content,
+.breeding,
+.buffalo_content,
+.sheep_content,
+.wheat_content,
+.selection,
+.selection_content,
+.comparison_content,
+.bacteria_content,
+.moth_content,
+.charles {
+    padding: 4% 0;
+}
+
+.bio3_main th,
+td {
+    font-size: 1.3rem;
+    font-family: 'Didact Gothic', sans-serif;
+}
+
+.bio3_main .col1 {
+    width: 50%;
+}
+/*Bio Unit 3_END*/
+
+/*Chem Unit 4_START*/
+#chem1{
+    background-color: #F6F6F2;
+    padding: 3% 6%;
+}
+.chem1_main h1, h2{
+    font-family: 'Amiri Quran', serif;
+}
+.chem1_main h5{
+    font-family: 'Didact Gothic', sans-serif;
+}
+.chem1_main p, .mass_charge table, .ele_table table{
+    font-family: 'Didact Gothic', sans-serif;
+    font-size: 1.3rem;
+    margin-bottom: 0;
+}
+.leftfig, .mass_charge_content .content1{
+    float: left;
+    clear: both;
+}
+.rightfig{
+    float: right;
+    clear: both;
+}
+.atom .leftfig img, .ionic_bond .leftfig img, .metallic .leftfig img{
+    width: 40vw;
+    margin-right: 5rem;
+}
+.jj_model .rightfig img{
+    width: 25vw;
+}
+.gold_foil .leftfig iframe{
+    width: 40vw;
+    height: 20vw;
+    margin-right: 5rem;
+}
+.gold_foil{
+    margin-top: 8rem;
+}
+.chem1_main figcaption{
+    font-style: italic;
+    font-size: 1rem;
+}
+.mass_charge table{
+    width: 45%;
+    height: 40vh;
+    margin: auto;
+}
+.ele_table{
+    width: 80%;
+    margin: auto;
+}
+.periodic_table img{
+    width: 60%;
+    margin: auto;
+    display: block;
+}
+.mass_charge_content .content1{
+    width: 50%;
+}
+.periodic_content{
+    display: flex;
+    justify-content: space-around;
+}
+/* .periodic_content .content2{
+    width: 80%;
+} */
+.c2_hr{
+    margin-top: 3rem;
+    color: #000000;
+}
+.nacl_bond figure img{
+    width: 20vw;
+}
+.nacl_bond{
+    display: flex;
+    justify-content: space-around;
+}
+.ionic_bond, .metallic, .gp1_metals, .gp7, .gp8{
+    margin-top: 5%;
+}
+.covalent_bond .rightfig img{
+    width: 50vw;
+}
+.covalent_bond2 img{
+    width: 80%;
+}
+.gp1_metals .rightfig img, .gp7 .rightfig img, .gp8 .rightfig img{
+    width: 40vw;
+}
+.chem1_main .note{
+    background-color: #BADFE7;
+    border: 1px solid black;
+    border-radius: 7px;
+    width: 45%;
+    margin-top: 15%;
+}
+.chem1_main .pop-note{
+    width: 90%;
+}
+
+/* CHEM UNIT 5_START */
+#chem5{
+    background-color: #F6F6F2;
+    padding: 3% 6%;
+}
+.chem5_main h1, h2{
+    font-family: 'Amiri Quran', serif;
+}
+.chem5_main h5{
+    font-family: 'Didact Gothic', sans-serif;
+}
+.chem5_main p{
+    font-family: 'Didact Gothic', sans-serif;
+    font-size: 1.3rem;
+    margin-bottom: 0;
+}
+.chem5_main figcaption{
+    font-style: italic;
+    font-size: 1rem;
+}
+.leftfig, .react_or_process .content1{
+    float: left;
+    clear: both;
+}
+.rightfig{
+    float: right;
+    clear: both;
+}
+.endothermic figure img, .exothermic figure img{
+    width: 40vw;
+}
+.react_or_process .content1{
+    width: 50vw;
+}
+.exo-1 figure iframe, .exo-2 figure iframe, .exo-3 figure iframe, .exo-4 figure iframe{
+    width: 40vw;
+    height: 35vh
+}
+.exo_content .leftfig iframe{
+    margin-right: 12rem;
+}
+.exo-2, .exo-3, .exo-4{
+    margin-top: 8rem;
+}
+.exo2_content, .exo3_content, .exo4_content{
+    padding-top: 1%;
+}
+.chem5_main .note{
+    background-color: #BADFE7;
+    border: 1px solid black;
+    border-radius: 7px;
+    width: 45%;
+}
+.chem5_main .pop-note{
+    width: 90%;
+}
+/* CHEM UNIT 5_END */
+
+/* CHEM UNIT 6_START */
+#chem6{
+    background-color: #F6F6F2;
+    padding: 3% 6%;
+}
+.chem6_main h1, h2{
+    font-family: 'Amiri Quran', serif;
+}
+.chem6_main h5{
+    font-family: 'Didact Gothic', sans-serif;
+}
+.chem6_main p{
+    font-family: 'Didact Gothic', sans-serif;
+    font-size: 1.3rem;
+    margin-bottom: 0;
+}
+.chem6_main figcaption{
+    font-style: italic;
+    font-size: 1rem;
+}
+.leftfig{
+    float: left;
+    clear: both;
+}
+.rightfig{
+    float: right;
+    clear: both;
+}
+.steam figure img{
+    width: 40vw;
+    margin-right: 5rem;
+}
+.oxygen figure iframe, .water figure iframe, .acid figure iframe, .displacement figure iframe{
+    width: 35vw;
+    height: 37vh;
+}
+.thermite figure img, .carbon figure img{
+    width: 30vw;
+    border: 1px solid #388087;
+}
+.carbon figure img{
+    margin-left: 15%;
+}
+.leftfig iframe{
+    margin-right: 10rem;
+}
+.r-series1 img, .r-series2 img{
+    width: 90%;
+}
+.chem6_main .note{
+    background-color: #BADFE7;
+    border: 1px solid black;
+    border-radius: 7px;
+    width: 45%;
+}
+.chem6_main .pop-note{
+    width: 90%;
+}
+.react-title{
+    padding-top: 5rem !important;
+}
+.reactivity-series .r-series2 img{
+    width: 77%;
+}
+.chem6_main .acid_content{
+    margin-bottom: 10rem;
+}
+.dis-note{
+    margin: 10rem auto;
+}
+.reactivity-series .r-series1{
+    float: left;
+}
+.reactivity-series .r-series1 img{
+    width: 40vw;
+}
+.reactivity-series .r-series2 img{
+    width: 34vw;
+}
+/* CHEM UNIT 6_END */
+
+/*Chem Unit 7_START*/
+.chem_7 {
+    background-color: #F6F6F2;
+    padding: 3% 0;
+    overflow-x: hidden;
+}
+
+.chem_7 .salt,
+/*.acids-salts,*/
+.salt-prep_content,
+.method-expand,
+.titration,
+.indicators {
+    padding: 2% 0;
+}
+.chem_7 .acids-salts_content{
+    padding-bottom: 10%;
+}
+.chem_7 .experiment{
+    padding-bottom: 4%;
+    padding-top: 2%;
+}
+
+.chem_7 .acids-salts_content, .titration_content, .indicators_content {
+    padding-top: 3rem;
+}
+
+.chem_7 h1,
+h2 {
+    font-family: 'Amiri Quran', serif;
+}
+
+.chem_7 h5 {
+    font-family: 'Didact Gothic', sans-serif;
+}
+
+.chem_7 p {
+    font-family: 'Didact Gothic', sans-serif;
+    font-size: 1.3rem;
+    margin-bottom: 0;
+}
+
+.chem_7 .leftfig {
+    float: left;
+    clear: both;
+}
+
+.chem_7 .rightfig {
+    float: right;
+    clear: both;
+}
+
+.chem_7 .salt-img {
+    height: 26vw;
+    width: 30vw;
+}
+.chem_7 .zinc_pic{
+    height: 25vw;
+}
+.chem_7 .copper-oxide_pic{
+    height: 30vw;
+}
+.chem_7 .carbonate_pic{
+    width: 35vw;
+}
+.chem_7 .universal-indicator_pic, .litmus_pic, .phenol_pic, .methyl_pic{
+    height: 21vw;
+    width: 20vw;
+}
+.chem_7 .titration_pic{
+    height: 39vw;
+}
+.chem_7 .col1 {
+    width: 50%;
+}
+.chem_7 .first_col{
+    width: 22%;
+}
+.chem_7 .indicator_row{
+    margin-bottom: 3%;
+    width: 110%;
+}
+.chem_7 .acids-salts_pic {
+    width: 26vw;
+}
+.chem_7 .method {
+    background-color: #BADFE7;
+    border: 1px solid black;
+    border-radius: 7px;
+    width: 60%;
+    margin: auto;
+    line-height: 1.9;
+}
+.chem_7 figcaption{
+    font-size: 1rem;
+}
+.chem_7 .equation{
+    line-height: 2;
+    font-style: italic;
+    font-weight: bold;
+}
+/*Chem Unit 7_END*/
+
+/*Chem Unit8_START*/
+.chem_8 {
+    background-color: #F6F6F2;
+    padding: 3% 0;
+}
+.chem_8 .rateofreaction, .method-rate, .rate-method, .changes, .graph, .why_rate, .surface-area, .converter , .explanation, .experiment_row, .middle-sec, .temperature-rate, .concentration-rate, .catalyst, .enzyme, .factors, .haber{
+    padding: 3% 0;
+}
+.chem_8 .graph_content{
+    padding-top: 4%;
+}
+.chem_8 .method-rate_content{
+    padding-top: 7%;
+    padding-bottom: 9%;
+}
+.chem_8 .middle-sec{
+    margin: 0 17%;
+}
+.chem_8 .leftfig {
+    float: left;
+    clear: both;
+}
+.chem_8 .rightfig {
+    float: right;
+    clear: both;
+}
+.chem_8 figcaption {
+    font-size: 1rem;
+    font-style: italic;
+}
+.chem_8 .experiment1_pic{
+    width: 50vw;
+}
+.chem_8 .reaction_pic{
+    width: 45vw;
+    height: 30vw;
+}
+.chem_8 .rate1_pic, .rate2_pic, .rate3_pic, .rate4_pic, .anomalous_pic{
+    width: 35vw;
+}
+.chem_8 .rate3_pic{
+    height: 22vw;
+}
+.chem_8 .graph_pic{
+    width: 40vw;
+}
+.chem_8 .anomalous{
+    padding-bottom: 10%;
+}
+.chem_8 .catalytic_pic, .catalytic_vid{
+    height: 30vw;
+}
+.chem_8 .surface-area_pic{
+    width: 42vw;
+}
+.chem_8 .catalyst_pic{
+    width: 35vw;
+}
+.chem_8 .ytvid{
+    width: 90%;
+    height: 50vh;
+}
+.chem_8 .temperature-rate_pic, .temperature-graph_pic, .concentration-rate_pic{
+    width: 44vw;
+}
+.chem_8 .concentration-graph_pic{
+    width: 82%;
+    height: 28vw;
+}
+.chem_8 .collision_pic{
+    width: 43vw;
+    height: 22vw;
+}
+.chem_8 .side-text{
+    text-indent: 5%;
+}
+.chem_8 .nested-text{
+    text-indent: 2%;
+}
+.chem_8 .side-eq{
+    text-indent: 10%;
+}
+.chem_8 h1,
+h2, h3 {
+    font-family: 'Amiri Quran', serif;
+}
+.chem_8 h5 {
+    font-family: 'Didact Gothic', sans-serif;
+}
+.chem_8 p {
+    font-family: 'Didact Gothic', sans-serif;
+    font-size: 1.3rem;
+    margin-bottom: 0;
+}
+.chem_8 .concentration_row{
+    padding-top: 5%;
+}
+/*Chem Unit8_END*/
+
+/* Phys Unit-9_START */
+#phys9{
+    background-color: #F6F6F2;
+    padding: 3% 6%;
+}
+.phys9_main h1, .phys9_main h2, .phys9_main h3{
+    font-family: 'Amiri Quran', serif;
+}
+.phys9_main h5{
+    font-family: 'Didact Gothic', sans-serif;
+}
+.phys9_main p, .unit table{
+    font-family: 'Didact Gothic', sans-serif;
+    font-size: 1.3rem;
+    margin-bottom: 0;
+}
+.phys9_main .leftfig{
+    float: left;
+    clear: both;
+}
+.phy9_main .rightfig{
+    float: right;
+    clear: both;
+}
+.density figure img, .he-balloon figure img{
+    width: 30vw;
+    margin-right: 5rem;
+}
+.phys9_main figcaption{
+    font-style: italic;
+    font-size: 1rem;
+}
+.phys9_main .note{
+    background-color: #BADFE7;
+    border: 1px solid black;
+    border-radius: 7px;
+    width: 45%;
+}
+.phys9_main .pop-note{
+    width: 90%;
+}
+.mass_pic figure .beam_pic1, .cal_pressure figure img, .moment_cal figure img{
+    width: 25vw;
+}
+.mass_pic figure .beam_pic2{
+    width: 19.5vw;
+}
+.mass_pic figure .spring_pic{
+    width: 11vw;
+}
+.measure_volume figure img{
+    width: 99%;
+}
+.measure2_3 figure{
+    margin-left: 7%;
+}
+.measure2_3{
+    display: flex;
+}
+.cal_dens figure img{
+    width: 18vw;
+}
+.cal_pressure figure img, .cal_dens figure img, .he-balloon figure img, .liquid_pres figure img, .water_density figure img, .turn figure img, .moment_inner figure img, .moment_cal figure img, .center_gravity figure img{
+    margin-right: 5rem;
+}
+.liquid_pres figure img{
+    width: 15vw;
+}
+.unit table{
+    width: 45%;
+    height: 40vh;
+    margin: auto;
+}
+.unit_change{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.water_density figure img{
+    width: 33vw;
+}
+.turn figure img, .center_gravity figure img, .moment_inner figure img{
+    width: 30vw;
+}
+.moment_eg figure img{
+    width: 40vw;
+}
+.unit_change .change{
+    padding-bottom: 10%;
+}
+/* Phys Unit-9_START */
+
+/* Phys Unit-10 START */
+#phys10{
+    background-color: #F6F6F2;
+    padding: 3% 6%;
+}
+.phys10_main h1, .phys10_main h2, .phys10_main h3{
+    font-family: 'Amiri Quran', serif;
+}
+.phys10_main h5{
+    font-family: 'Didact Gothic', sans-serif;
+}
+.phys10_main p{
+    font-family: 'Didact Gothic', sans-serif;
+    font-size: 1.3rem;
+    margin-bottom: 0;
+}
+.phys10_main .leftfig{
+    float: left;
+    clear: both;
+}
+.phys10_main .rightfig{
+    float: right;
+    clear: both;
+}
+.phys10_main figcaption{
+    font-style: italic;
+    font-size: 1rem;
+}
+.phys10_main .note{
+    background-color: #BADFE7;
+    border: 1px solid black;
+    border-radius: 7px;
+    width: 45%;
+}
+.phys10_main .pop-note{
+    width: 90%;
+}
+
+
+.static figure iframe, .acdc figure iframe{
+    width: 35vw;
+    height: 15vw;
+}
+.lightning figure img, .lightning_rod figure img, .ele-force figure img, .voltage figure img, .parallel figure img{
+    width: 25vw;
+}
+.series figure img{
+    width: 18vw;
+}
+.charge_fric figure img, .wetbattery figure img{
+    width: 20vw;
+}
+.lightning figure, .lightning_rod figure, .ele-intro2 figure, .current figure, .insulator figure, .conductor figure, .fuse figure, .resistor figure{
+    margin-left: 20%;
+}
+.ele-force figure, .charge_fric figure, .ele-intro1 figure, .wetbattery figure, .current figure, .voltage figure, .ammeter figure, .voltmeter figure{
+    margin-right: 5rem;
+}
+.charge_induct .rightfig img{
+    width: 20.25vw;
+}
+.charge_induct .leftfig img, .ele-intro1 figure img, .ele-intro2 figure img, .current figure img, .insulator figure img, .conductor figure img, .fuse figure img, .resistor figure img, .ammeter figure img, .voltmeter figure img{
+    width: 30vw;
+}
+.induc_img{
+    display: flex;
+    justify-content: space-evenly;
+}
+.connection{
+    display: flex;
+    justify-content: space-around;
+}
+/* Phys Unit-10 END */
+
+/* Phys Unit-11 START */
+#phys11{
+    background-color: #F6F6F2;
+    padding: 3% 6%;
+}
+.phys11_main h1, .phys11_main h2, .phys11_main h3{
+    font-family: 'Amiri Quran', serif;
+}
+.phys11_main h5{
+    font-family: 'Didact Gothic', sans-serif;
+}
+.phys11_main p{
+    font-family: 'Didact Gothic', sans-serif;
+    font-size: 1.3rem;
+    margin-bottom: 0;
+}
+.phys11_main .leftfig{
+    float: left;
+    clear: both;
+}
+.phys11_main .rightfig{
+    float: right;
+    clear: both;
+}
+.phys11_main figcaption{
+    font-style: italic;
+    font-size: 1rem;
+}
+.phys11_main .note{
+    background-color: #BADFE7;
+    border: 1px solid black;
+    border-radius: 7px;
+    width: 45%;
+}
+.phys11_main .pop-note{
+    width: 90%;
+}
+.fossil figure, .energy-source figure, .dams figure, .conduction figure, .thermal figure, .convection figure, .radiation figure, .flask figure{
+    margin-right: 5rem;
+    margin-bottom: 0;
+}
+.crude figure, .impoundment figure, .division figure, .pumped figure, .black figure, .evaporation figure{
+    margin-left: 20%;
+}
+.fossil figure img, 
+.crude figure img, 
+.dams figure img, 
+.impoundment figure img, 
+.division figure img, 
+.pumped figure img, 
+.thermal figure img, 
+.heat-conduction figure img, 
+.heat-convection figure img, 
+.flask figure img, 
+.evaporation figure img{
+    width: 30vw;
+}
+.convection figure img{
+    width: 20vw;
+}
+.energy-source figure img, .conduction figure img{
+    width: 42vw;
+}
+.heat-conduction .t1 figure img, .heat-conduction .t3 figure img, 
+.radiation figure img{
+    width: 34vw;
+}
+.heat-convection .convec2 figure img{
+    width: 30vw;
+}
+.energy-source .inner{
+    display: flex;
+    justify-content: space-around;
+}
+.heat-conduction .inner1, .heat-conduction .inner2, .heat-convection .inner1, .heat-convection .inner2{
+    display: flex;
+    justify-content: space-around;
+}
+.black figure iframe{
+    width: 30vw;
+    height: 30vh;
+}
+/* Phys Unit-11 END */
+
+/*TIMER*/
+.tools-body{
+    width: 100%;
+    background-color: #F6F6F2;
+}
+.timer-section{
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F6F6F2;
+    font-family: 'Didact Gothic', sans-serif; 
+}
+.timer-wrap{
+    user-select: none;
+}
+.timer-wrap h2{
+    text-transform: uppercase;
+    text-align: center;
+    color: #388087;
+    font-size: 2.8rem;
+    font-family: 'Amiri Quran', serif;
+    margin-bottom: 3rem;
+}
+.timer-wrap .time{
+    height: 100px;
+    background: #6FB3B8;
+    border-radius: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1);
+    padding: 0 0.8rem;
+}
+.timer-wrap .time span{
+    width: 8rem;
+    text-align: center;
+    font-size: 2.8rem;
+    color: #F6F6F2;
+    transition: all 0.4s ease-in-out;
+}
+.time span.colon{
+    width: 0.5rem;
+}
+.time span.ms-colon,
+.time span.millisecond{
+    color: #C2EDCE;
+}
+.timer-wrap .buttons{
+    text-align: center;
+    margin-top: 1.2rem;    
+}
+.buttons button{
+    padding: 0.6rem 1.8rem;
+    outline: none;
+    border: none;
+    margin: 0 0.5rem;
+    background-color: #BADFE7;
+    color: #1D4145;
+    font-size: 1.2rem;
+    font-family: 'Didact Gothic', sans-serif; 
+    font-weight: 500;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+}
+.buttons button.active,
+.buttons button.stopActive{
+    cursor: not-allowed;
+    opacity: 0.7;
+}
+
+/*MUSIC*/
+.music-section{
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Didact Gothic', sans-serif; 
+}
+.music-section h2{
+    text-transform: uppercase;
+    text-align: center;
+    color: #388087;
+    font-size: 2.8rem;
+    font-family: 'Amiri Quran', serif;
+    margin-bottom: 6.5rem;
+}
+.music-container{
+    background-color: #BADFE7;
+    border-radius: 15px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+    display: flex;
+    padding: 1rem 1.8rem;
+    position: relative;
+    margin: 5rem 0;
+}
+.img-container{
+    position: relative;
+    width: 6.8rem;
+}
+.img-container::after{
+    content: '';
+    background-color: #BADFE7;
+    height: 1.2rem;
+    width: 1.2rem;
+    position: absolute;
+    left: 50%;
+    bottom: 65%;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+}
+.img-container img{
+    width: inherit;
+    height: 6.8rem;
+    border-radius: 50%;
+    object-fit: cover;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    animation: rotate 3s linear infinite;
+    animation-play-state: paused;
+}
+.music-container.play .img-container img{
+    animation-play-state: running;
+}
+
+@keyframes rotate{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+.music-container .navigation{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+.action-btn{
+    background-color: #BADFE7;
+    border: 0;
+    color: #999;
+    font-size: 1.2rem;
+    cursor: pointer;
+    padding: 0.6rem;
+    margin: 0 1.2rem;
+}
+.action-btn-big{
+    color: #999;
+    font-size: 1.6rem;
+}
+.action-btn:focus{
+    outline: 0;
+}
+.music-info{
+    background-color: #6FB3B8;
+    border-radius: 1rem 1rem 0 0;
+    position: absolute;
+    top: 0;
+    left: 1.2rem;
+    padding: 0.5rem 0.5rem 0.3rem 7.5rem;
+    opacity: 0;
+    width: calc(100% - 2.5rem);
+    transform: translateY(0%);
+    transition: transform ease-in, opacity 0.3 ease-in;  
+}
+.music-container.play .music-info{
+    opacity: 1;
+    transform: translateY(-100%);
+}
+.music-info h5{
+    margin: 0;
+    font-size: 1.1rem;
+}
+.progress-container{
+    background: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px 0;
+    height: 4px;
+    width: 100%;
+}
+.progress-container #progress{
+    background: #388087;
+    border-radius: 5px;
+    height: 100%;
+    width: 0%;
+    transition: width 0.1s linear;
+}
+
+/*RATING*/
+.rating-section{
+    width: 100%;
+    background-color: #F6F6F2;
+    padding: 5rem;
+}
+.star-bar{
+    width: 35%;
+    margin: auto;
+    border-radius: 10px;
+    padding: 1.5rem 0;
+    margin-bottom: 2.5rem;
+}
+.star-container{
+    display: flex;
+    justify-content: space-evenly;
+    margin: auto;
+}
+.star-container i{
+    font-size: 2.5rem;
+    color: #388087;
+}
+.rating-wrap{
+    width: 70%;
+    margin: auto;
+}
+.rating-wrap h2{
+    text-transform: uppercase;
+    text-align: center;
+    color: #388087;
+    font-size: 2.8rem;
+    font-family: 'Amiri Quran', serif;
+    margin-bottom: 2rem;
+}
+.rating-parent{
+    background-color: #BADFE7;
+    padding: 3rem 3rem 0.5rem 3rem;
+    border-radius: 2rem;
+}
+.rating-item{
+    display: flex;
+    font-family: 'Didact Gothic', sans-serif; 
+    margin-bottom: 1.5rem;
+}
+.rating-item img{
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    margin-right: 1.2rem;
+}
+.rating-item h5{
+    font-size: 1.2rem;
+    margin-top: 0.5rem;
+    font-weight: 600;
+}
+.rating-item span{
+    font-size: 1.2rem;
+    color: #6FB3B8;
+    margin-bottom: 1rem;
+}
+.rating-item span.checked{
+    color: #388087;
+}
+.rating-item hr{
+    width: 20%;
+}
+.rating-item p{
+    text-align: justify;
+}
+
+/*EVENTS*/
+.eventbanner-section{
+    width: 100%;
+    background-color: #BADFE7;
+    position: relative;
+}
+.eventbanner-wrap{
+    display: flex;
+}
+.eventbanner-content{
+    width: 60vw;
+    padding: 6rem;
+}
+.eventbanner-content h1{
+    font-size: 3rem;
+    margin-bottom: 2.2rem;
+    font-weight: 500;
+    color: #1D4145;
+    font-family: 'Amiri Quran', serif;
+    line-height: 3.3rem;
+}
+.eventbanner-content p{
+    font-size: 1rem;
+    font-family: 'Didact Gothic', sans-serif;
+    font-style: italic;
+}
+.event-bar{
+    position: absolute;
+    left: 10%;
+    bottom: 18%;
+    width: 70%;
+    background-color: #539B9F;
+    padding: 2rem 3rem;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Didact Gothic', sans-serif;
+}
+.event-bar .item{
+    display: flex;
+    border-right: 1px solid #F6F6F2;
+    padding-right: 2.2rem;
+    color: #F6F6F2;
+}
+.event-bar .item i{
+    font-size: 3rem;
+    margin-right: 1rem;
+}
+.event-bar .item h6{
+    font-size: 1.1rem;
+    margin-bottom: 0.2rem;
+}
+.event-bar .item p{
+    font-size: 0.85rem;
+    margin: 0;
+}
+.eventbar-button a{
+    padding: 0.5rem 1rem;
+    border: 1px solid #F6F6F2;
+    font-size: 0.9rem;
+    color: #F6F6F2;
+    text-decoration: none;
+    font-weight: 500;
+}
+.eventbar-button a:lin{
+    padding: 0.5rem 1rem;
+    border: 1px solid #F6F6F2;
+    font-size: 0.9rem;
+    color: #F6F6F2;
+    text-decoration: none;
+    font-weight: 500;
+}
+.eventbar-button a:hover{
+    background:  #f6f6f2;
+    color: #388087;
+}
+.eventbanner-section img{
+    width: 40vw;
+}
+
+
+.event2-section{
+    width: 100%;
+    background-color: #F6F6F2;
+    padding: 5rem;
+}
+.event2-wrap{
+    width: 75%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    font-family: 'Didact Gothic', sans-serif;  
+}
+.event-item{
+    background-color: #6FB3B8;
+    padding: 2rem 3rem;
+    border-radius: 0.5rem;
+    color: #F6F6F2;
+}
+.event-item i{
+    font-size: 2.4rem;
+    margin-bottom: 1rem;
+}
+.event-item h5{
+    font-size: 1.4rem;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+}
+.event-item p{
+    font-size: 1rem;
+    margin-bottom: 1.8rem;
+}
+.event-item a{
+    padding: 0.5rem 1rem;
+    border: 1px solid #F6F6F2;
+    font-size: 0.9rem;
+    color: #F6F6F2;
+    text-decoration: none;
+    font-weight: 500;
+}
+.event-item a:hover{
+    background:  #f6f6f2;
+    color: #388087;
+}
+
+.upcoming-section{
+    width: 100%;
+    background-color: #F6F6F2;
+    padding: 2rem 5rem 5rem;
+}
+.upcoming-wrap{
+    width: 75%;
+    margin: auto;
+}
+.upcoming-wrap h2{
+    text-align: center;
+    color: #388087;
+    font-size: 2.8rem;
+    font-family: 'Amiri Quran', serif;
+    margin-bottom: 5rem;
+}
+.upcoming-item{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Didact Gothic', sans-serif;
+    margin-bottom: 3rem;  
+}
+.upcoming-item .left{
+    display: flex;
+    align-items: center;
+    width: 80%;
+}
+.upcoming-item img{
+    width: 10rem;
+    height: 10rem;
+    margin-right: 2rem;
+}
+.upcoming-item h6{
+    font-size: 1.45rem;
+    font-weight: 600;
+}
+.upcoming-item p.org{
+    font-size: 1.1rem;
+}
+.upcoming-item p{
+    font-size: 0.95rem;
+    text-align: justify;
+}
+.upcoming-item a{
+    padding: 0.5rem 1rem;
+    border: 1px solid #388087;
+    font-size: 0.9rem;
+    color: #388087;
+    text-decoration: none;
+    font-weight: 500;  
+    text-transform: uppercase;
+    font-weight: 500;
+}
+.upcoming-item a:hover{
+    background:  #388087;
+    color: #F6F6F2;
+}
+
+/* PLANNER START */
+.tools-body{
+    overflow-x: hidden;
+}
+.studyplanner-section{
+    width: 100%;
+    padding: 2rem 0;
+}
+.studyplanner-section h2{
+    text-transform: uppercase;
+    text-align: center;
+    color: #388087;
+    font-size: 2.8rem;
+    font-family: 'Amiri Quran', serif;
+    margin-bottom: 3rem;
+}
+.todo-container {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    justify-content: center;
+    overflow-x: hidden;
+    padding-bottom: 3rem;
+    width: 100vw;
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 10%;
+}
+  .todo-container .inner-planner{
+    width: 30vw;
+  }
+  
+  .status {
+    background-color: #f3f3f3;
+    position: relative;
+    padding: 60px 1rem 0.5rem;
+    font-size: 0.7rem;
+    font-family: 'Amiri Quran', serif;
+  }
+  #no_status h1{
+    background-color: #1D4145;
+  }
+  
+  .status:nth-child(even) {
+    background-color: #e9e9e96b;
+  }
+  
+  .status h1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #6FB3B8;
+    color: #f3f3f3;
+    margin: 0;
+    width: 100%;
+    padding: 1rem 1rem;
+    font-family: 'Didact Gothic', sans-serif;
+    letter-spacing: 1px;
+  }
+  
+  #add_btn {
+    padding: 0.5rem 1rem;
+    background-color:#6FB3B8;
+    outline: none;
+    border: none;
+    width: 100%;
+    font-size: 1rem;
+    margin: 2rem 0 0.5rem 0;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: 'Didact Gothic', sans-serif;
+  }
+  
+  #add_btn:hover {
+    background-color: #aaa;
+  }
+  
+  .todo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    background-color: #fff;
+    box-shadow: rgba(15, 15, 15, 0.1) 0px 0px 0px 1px,
+      rgba(15, 15, 15, 0.1) 0px 2px 4px;
+    border-radius: 4px;
+    padding: 0.2rem 1rem 0.2rem 1rem;
+    font-size: 1rem;
+    margin: 2rem 0;
+  }
+  
+  .todo .close {
+    position: absolute;
+    right: 1rem;
+    font-size: 1rem;
+    color: #ccc;
+    cursor: pointer;
+  }
+  
+  .todo .close:hover {
+    color: #343444;
+  }
+  
+  /* modal */
+  
+  .close-modal {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+  }
+  
+  .modal {
+    width: 450px;
+    position: fixed;
+    top: -50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: top 0.3s ease-in-out;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    z-index: 2;
+    background-color: #fff;
+  }
+  
+  .modal.active {
+    top: 15%;
+  }
+  
+  .modal .planner-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+    padding: 0.5rem;
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+  
+  .modal .planner-body {
+    padding: 0.75rem;
+  }
+  
+  #overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  
+  #overlay.active {
+    display: block;
+  }
+  
+  #todo_input,
+  #todo_submit {
+    padding: 0.5rem 1rem;
+    width: 100%;
+    margin: 0.25rem;
+  }
+  
+  #todo_submit {
+    background-color: #388087;
+    color: #f3f3f3;
+    font-size: 1.25rem;
+    border: none;
+  }
+/* PLANNER END */
+
+@media (max-width:1400px){
+    /*EVENT*/
+    .eventbanner-content{
+        padding: 4.5rem 6rem;
+    }
+    .event-bar{
+        position: absolute;
+        left: 12%;
+        bottom: 15%;
+        width: 68%;
+    }
+    .event-bar .item{
+        padding-right: 1rem;
+    }
+    
+}
+
+@media (max-width:1290px){
+
+    /*SLIDER*/
+    #event-slider{
+        padding: 15% 15%;
+    }
+    #event-slider img{
+        width: 40%;
+        margin-right: 3rem;
+    }
+    .event-slider-content h2{
+        margin-top: 0;
+        font-size: 2rem;
+    }
+    .event-slider-content p{
+        margin: 1.2rem 0 2rem;
+    }
+    #subject-slider{
+        padding: 10% 13%;
+    }
+    .subject-slider-content h2{
+        font-size: 2.6rem;
+    }
+    #subject-slider img{
+        width: 60%;
+    }
+
+    /*PURPOSE*/
+    .purpose-section h2{
+        margin-bottom: 0.8rem; 
+    }
+    .purpose-text{
+        line-height: 1.6rem;
+        font-size: 1.1rem;
+        margin: 0 3rem;
+    }
+
+    /*ABOUT*/
+    .aboutus-wrap{
+        width: 80%;
+    }
+    .about-content{
+        margin-right: 4rem;
+        padding: 2rem 0;
+    }
+    .about-content h2{
+        font-size: 2rem;
+        margin-bottom: 1.3rem;
+    }
+    .about-content p{
+        margin-top: 2.2rem;
+        font-size: 1rem;
+        line-height: 1.8rem;
+    }
+    
+    /* FOOTER */
+    .links1, .links2{
+        line-height: 3rem;
+    }
+
+    /*EVENT*/
+    .event2-section{
+        padding: 5rem 3rem;
+    }
+    .event2-wrap{
+        width: 85%; 
+    }
+    .event-item{
+        padding: 1.8rem 2.5rem;
+    }
+    .upcoming-section{
+        padding: 2rem 4rem 5rem;
+    }
+    .upcoming-wrap{
+        width: 82%;
+    }
+    .upcoming-item .left{
+        width: 79%;
+    }  
+    .eventbanner-content{
+        padding: 4rem 4rem 4rem 5rem;
+    }
+    .eventbanner-content h1{
+        font-size: 2.5rem;
+        margin-bottom: 1.6rem;
+        line-height: 2.8rem;
+    }
+    .eventbanner-content p{
+        font-size: 1rem;
+        line-height: 1.3rem;
+    }
+    .event-bar{
+        position: absolute;
+        left: 15%;
+        bottom: 12%;
+        width: 65%;
+        padding: 1.5rem 1.8rem;
+        border-radius: 8px;
+    }
+    .event-bar .item{
+        padding-right: 1rem;
+    }  
+    .event-bar .item{
+        color: #F6F6F2;
+    }
+    .event-bar .item i{
+        font-size: 2.2rem;
+        margin-right: 0.8rem;
+    }
+    .event-bar .item h6{
+        font-size: 0.9rem;
+        margin-bottom: 0.2rem;
+    }
+    .event-bar .item p{
+        font-size: 0.75rem;
+        margin: 0;
+    }
+    .eventbar-button a{
+        padding: 0.4rem 0.8rem;
+    }
+}
+@media (max-width:1100px) {
+    .bio_1 iframe{
+        width: 43vw;
+    }
+    .bio_1 .pollen-formation_content{
+        padding: 0;
+    }
+    .bio_1 .double-fertilisation_content{
+        padding: 0;
+    }
+    .bio_1 .support_content{
+        padding: 0;
+    }
+    .bio_1 .transport_content{
+        padding-bottom: 12%;
+        padding-top: 3%;
+    }
+    .bio_1 .water-photosynthesis_content{
+        padding: 10% 0;
+    }
+    .bio_1 .cooling_content{
+        padding-top: 5%;
+        padding-bottom: 12%;
+    }
+    .bio_1 .wind-pollinated_pic{
+        width: 50vw;
+    }
+
+    /*CHEM UNIT 8*/
+    .chem_8 iframe, .catalytic_vid{
+        width: 90%;
+        height: 30vw;
+    }
+    .chem_8 .graph_content{
+        padding-top: 0;
+    }
+
+    /*RATING*/
+    .rating-wrap{
+        width: 75%;
+    }
+    .rating-parent{
+        padding: 3rem 2.8rem 0.5rem 2.8rem;
+    }
+
+    /*EVENT*/
+    .event2-section{
+        padding: 5rem 3rem;
+    }
+    .event2-wrap{
+        width: 85%; 
+    }
+    .event-item{
+        padding: 1.8rem 2.5rem;
+    }
+    .upcoming-section{
+        padding: 2rem 3rem 5rem;
+    }
+    .upcoming-wrap{
+        width: 85%;
+    }
+    .upcoming-item .left{
+        width: 78%;
+    }
+    .upcoming-item img{
+        width: 9.5rem;
+        height: 9.5rem;
+        margin-right: 1.5rem;
+    }
+    .upcoming-item h6{
+        font-size: 1.35rem;
+        margin-bottom: 0.4rem;
+    }
+    .upcoming-item p.org{
+        font-size: 1.05rem;
+        margin-bottom: 0.5rem;
+    }
+    .upcoming-item p{
+        font-size: 0.95rem;
+        line-height: 1.3rem;
+    }
+    .upcoming-item a{
+        padding: 0.5rem 0.8rem;
+        font-size: 0.8rem;
+    }
+    .eventbanner-content{
+        padding: 2.8rem 3rem 3rem 4rem;
+    }
+    .eventbanner-content h1{
+        font-size: 2.1rem;
+        margin-bottom: 1.5rem;
+        line-height: 2.4rem;
+    }
+    .eventbanner-content p{
+        font-size: 0.95rem;
+        line-height: 1.3rem;
+    }
+    .event-bar{
+        position: absolute;
+        left: 16%;
+        bottom: 14%;
+        width: 65%;
+        padding: 1rem 1.5rem;
+        border-radius: 8px;
+    }
+    .event-bar .item{
+        padding-right: 0.6rem;
+    }  
+    .event-bar .item i{
+        font-size: 1.8rem;
+        margin: 0.2rem 0.65rem 0 0;
+    }
+    .event-bar .item h6{
+        font-size: 0.85rem;
+        margin-bottom: 0.1rem;
+    }
+    .event-bar .item p{
+        font-size: 0.75rem;
+        margin: 0;
+    }
+    .eventbar-button a{
+        padding: 0.35rem 0.6rem;
+        font-size: 0.75rem;
+    }
+}
+@media (max-width:1080px){
+    /*ABOUT*/
+    .aboutus-wrap{
+        width: 85%;
+    }
+    .about-content{
+        margin-right: 4rem;
+        padding: 1rem 0;
+    }
+    .about-content h2{
+        font-size: 2rem;
+        margin-bottom: 1.3rem;
+    }
+    .about-content p{
+        margin-top: 2.2rem;
+        font-size: 1rem;
+        line-height: 1.8rem;
+    }
+
+    /*TEAM START*/
+    .memb-card-wrap{
+        flex-basis: 50%;
+    }
+    .members-card{
+        margin: auto;
+    }
+
+}
+@media (min-width:1080px){
+    .memb-conatiner{
+        height: 50vh;
+    }
+}
+@media (max-width:1000px){
+    /*HEADER*/
+    .header-section{
+        height: 8rem;
+    }
+    #menu-icon{
+        display: inline-block;
+    }
+    .navs{
+        position: absolute;
+        top: 25%;
+        right: 100%;
+        width: 240px;
+        flex-direction: column;
+        justify-content: flex-start;
+        background-color: #388087;
+        border-radius: 10px;
+        z-index: 2;
+    }
+    #nav-links{
+        padding: 1rem;
+    }
+    .navs.open{
+        right: 2%;
+    }
+    .header-bottom .header-navs ul li{
+        padding: 0.6rem 3rem;
+    }
+    .header-right.close-mode #menu-icon{
+       display: none;
+    }
+    .header-right.close-mode #close-icon{
+        display: inline-block;
+    }
+    .navs.close{
+        right: 100%;
+    }
+    .header-right.menu-mode #menu-icon{
+        display: inline-block;
+    }
+    .header-right.menu-mode #close-icon{
+        display: none;
+    }
+    .dropdown{
+        display: none;
+        position: relative;
+        top: -200%;
+        left: -63.5%;
+        width: 240px;
+        opacity: 1;
+        background-color: #388087;
+    }
+    .dropdown:before{
+        display: none;
+    }
+    .header-navs ul li:hover > .dropdown,
+    .dropdown-link:hover > .dropdown{
+        display: block;      
+    }
+    #dropdown{
+       margin-top: 4%;
+        left: -63%;
+    }
+
+    /*SLIDER*/
+    #slogan-slider h1{
+        font-size: 3.2rem;
+        top: 34%;
+    }
+    #slogan-slider p{        
+      font-size: 1.4rem;
+        top: 50%;
+    }
+    #slogan-slider a{
+        top: 63%;
+    }
+
+    /*ABOUT*/
+    .aboutus-wrap{
+        width: 85%;
+    }
+    .about-content{
+        margin-right: 3rem;
+        padding: 0;
+    }
+    .about-content h2{
+        font-size: 2rem;
+        margin-bottom: 1.3rem;
+    }
+    .about-content p{
+        margin-top: 2rem;
+        font-size: 0.9rem;
+        line-height: 1.6rem;
+    }
+
+    /* FOOTER */
+    .line{
+        margin-top: 6%;
+    }
+
+    /* PHYS Unit-9 */
+    .measure2_3, .unit_change{
+        flex-direction: column;
+    }
+    .measure_volume figure img{
+        width: 90%;
+        display: block;
+        margin: auto;
+        margin-left: 0;
+    }
+    .unit_change .change{
+        padding-bottom: 10%;
+        text-align: center;
+    }
+    /* Phys Unit-11 */
+    .phys11_main figcaption{
+        font-style: italic;
+        font-size: 1rem;
+        text-align: center;
+    }
+    .heat-conduction figure img, 
+    .heat-conduction .t1 figure img, 
+    .heat-conduction .t3 figure img, 
+    .heat-convection figure img, 
+    .heat-convection .convec1 figure img, 
+    .heat-convection .convec3 figure img, 
+    .heat-convection .convec2 figure img{
+        width: 70%;
+        display: block;
+        margin: auto;
+    }
+    .heat-conduction .inner1, .heat-conduction .inner2, .heat-convection .inner1, .heat-convection .inner2{
+        flex-direction: column;
+    }
+
+    /*EVENT*/
+    .event2-section{
+        padding: 5rem 3rem;
+    }
+    .event2-wrap{
+        width: 90%; 
+    }
+    .event-item{
+        padding: 1.6rem 1.8rem;
+    }
+    .event-item i{
+        font-size: 2.2rem;
+        margin-bottom: 1rem;
+    }
+    .event-item h5{
+        font-size: 1.2rem;
+        margin-bottom: 0.5rem;
+    }
+    .event-item p{
+        font-size: 0.9rem;
+        margin-bottom: 1.6rem;
+    }
+}
+@media (max-width: 950px){
+    /*PURPOSE*/
+    .purpose-section h2{
+        margin-bottom: 1rem; 
+    }
+    .purpose-text{
+        line-height: 1.3rem;
+        font-size: 0.8rem;
+        margin: 0 2.2rem;
+    }
+
+    /*ABOUT*/
+    .aboutus-wrap{
+        width: 90%;
+    }
+    .about-content{
+        margin-right: 4rem;
+        padding: 0;
+    }
+    .about-content h2{
+        font-size: 2rem;
+        margin-bottom: 1.3rem;
+    }
+    .about-content p{
+        margin-top: 2rem;
+        font-size: 0.8rem;
+        line-height: 1.6rem;
+    }
+
+    /*SUBJECT*/
+    .unit-right{
+        padding: 2rem;
+        font-family: 'Didact Gothic', sans-serif;
+    }
+    .unit-right h3{
+        font-size: 1.3rem; 
+    }
+    .unit-right p{
+        margin-bottom: 7px;
+        font-size: 0.92rem;
+    }
+
+    /*EVENT*/
+    .eventbanner-content{
+        padding: 2.4rem 3rem 7.5rem 3.8rem;
+    }
+    .eventbanner-content h1{
+        font-size: 1.9rem;
+        margin-bottom: 1.2rem;
+        line-height: 2.1rem;
+    }
+    .eventbanner-content p{
+        font-size: 0.8rem;
+        line-height: 1.2rem;
+    }
+    .eventbanner-section img{
+        width: 44vw;
+    }
+    .event-bar{
+        position: absolute;
+        left: 14%;
+        bottom: 14%;
+        width: 68%;
+        padding: 0.9rem 1.4rem;
+        border-radius: 8px;
+    }
+    .event-bar .item{
+        border: none;
+    }  
+    .event-bar .item i{
+        font-size: 1.6rem;
+        margin: 0.2rem 0.5rem 0 0;
+    }
+    .event-bar .item h6{
+        font-size: 0.8rem;
+        margin-bottom: 0.1rem;
+    }
+    .event-bar .item p{
+        font-size: 0.7rem;
+        margin: 0;
+    }
+    .eventbar-button a{
+        padding: 0.35rem 0.6rem;
+        font-size: 0.75rem;
+    }
+
+
+@media (max-width: 870px){
+    .sign-container{
+        min-height: 800px;
+        height: 100vh;
+    }
+    .sign-container:before{
+        width: 1500px;
+        height: 1500px;
+        left: 30%;
+        bottom: 66%;
+        transform: translateX(-50%);
+        right: initial;
+        top: initial;
+        transition: 1.5s ease-in-out;
+    }
+    .signin-signup{
+        width: 100%;
+        left: 50%;
+        top: 93%;
+        transform: translate(-50%, -100%);
+        transition: 1s 0.8s ease-in-out;
+    }
+    .panels-container{
+        z-index: 10;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 2fr 1fr;
+    }
+    .panel{
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        padding: 40px 8%;
+    }
+    .left-panel{
+        grid-row: 1 / 2;
+    }
+    .right-panel{
+        grid-row: 3 / 4;
+    }
+    .panel .content{
+        padding-right: 15%; 
+        transition: 0.9s 0.7s ease-in-out;       
+    }
+    .panel h3{
+        font-size: 20px;
+    }
+    .panel p{
+        font-size: 12px;
+        padding: 10px 0;
+    }
+    .sign-container .btn .transparent{
+        width: 110px;
+        height: 35px;
+        font-size: 12px;
+    }
+    .sign-image{
+        width: 220px;
+        transition: 0.9s 0.6s ease-in-out;
+    }
+    .right-panel .content, .right-panel .sign-image{
+        transform: translateY(300px);
+    }
+    .sign-container.sign-up-mode:before{
+        transform: translate(-50%, 100%);
+        bottom: 34%;
+        right: initial;
+    }
+    .sign-container.sign-up-mode .left-panel .sign-image,
+    .sign-container.sign-up-mode .left-panel .content{
+        transform: translateY(-300px);
+    }
+    .sign-container.sign-up-mode .signin-signup{
+        top: 7%;
+        left: 50%;
+        transform: translate(-50%, 0);
+    }     
+}
+}
+
+@media (max-width: 870px){
+    /*EVENT*/
+    .upcoming-section{
+        padding: 2rem 2rem 5rem;
+    }
+    .upcoming-wrap{
+        width: 88%;
+    }
+    .upcoming-item .left{
+        width: 78%;
+    }
+    .upcoming-item img{
+        width: 9rem;
+        height: 9rem;
+    }
+    .upcoming-item h6{
+        font-size: 1.3rem;
+        margin-bottom: 0.4rem;
+    }
+}
+@media (max-width:800px){
+    /*HEADER*/
+    .header-section{
+        height: 6rem;
+    }
+    .logo-text{
+        display: none;
+    }
+    .header-left .logo{
+        height: 4rem;
+    }
+    .navs{
+        position: absolute;
+        top: 17%;
+        right: 100%;
+        width: 200px;
+    } 
+    .dropdown{
+        display: none;
+        position: relative;
+        top: -200%;
+        left: -38%;
+        width: 200px;
+        opacity: 1;
+        background-color: #388087;
+    }
+    .header-bottom .header-navs ul li{
+        padding: 0.6rem 1.5rem;
+    }
+    #dropdown{
+        margin-top: 4%;
+         left: -38%;
+     }
+
+    /*SLIDER*/
+    #slogan-slider{
+        padding: 0 5rem;
+    }
+    #slogan-slider h1{
+        font-size: 2.3rem;
+        top: 36%;
+    }
+    #slogan-slider p{        
+      font-size: 1.2rem;
+        top: 50%;
+        width: 72%;
+    }
+    #slogan-slider a{
+        font-size: 0.8rem;
+        top: 60%;
+    }
+    #subject-slider{
+        padding: 15% 10% 12% 15%;
+    }
+    .subject-slider-content h2{
+        font-size: 1.75rem;
+    }
+    #subject-slider img{
+        width: 60%;
+    }
+    .sub-btn{
+        text-decoration: none;
+        color: #f6f6f2;
+        font-size: 0.8rem;
+        padding: 0.6rem 1rem;
+        background-color: #6FB3B8;
+        text-decoration: none;
+        color: #f6f6f2;
+        width: 10.5vw;
+    }
+    .sub-btn:hover{
+        padding: 0.6rem 2rem;
+        background-color: #388087;
+        text-decoration: none;
+        transition: .3s;
+        color: #fff;
+    }
+
+    /*PURPOSE*/
+    .purpose-section h2{
+        margin-bottom: 0.8rem;
+    }
+    .purpose-text{
+        line-height: 1rem;
+        font-size: 0.8rem;
+        margin: 0 0.8rem;
+    }
+    
+    /*TIMELINE*/
+    #timeline{
+        margin: 30px;
+        padding: 0;
+    }
+    #timeline::before{
+        left: 0;
+    }
+    #timeline .timeline-item .timeline-icon{
+        left: 0;
+    }
+    #timeline .timeline-item .timeline-content{
+        width: 92%;
+        float: right;
+    }
+    #timeline .timeline-item .timeline-content::before{
+        left: -5px;
+        right: inherit;
+    }
+
+    /*ABOUT*/
+    #chem1 figcaption{
+        text-align: center;
+    }
+    .aboutus-section{
+        width: 100%;
+        background-color: #F6F6F2;
+        padding: 0;
+    }
+    .aboutus-wrap{
+        width: 75%;
+        margin: auto;
+        display: block;
+    }
+    .about-content{
+        margin: 0;
+        padding: 3rem 0;
+    }
+    .aboutus-section img{
+        width: 100%;
+        height: auto;
+    }
+    /*Bio Unit 1*/
+    .bio_1 iframe{
+        width: 74vw !important;
+        height: 27vh;
+        margin: auto;
+        display: block;
+    }
+    .bio_1 .leftfig img{
+        width: 83vw;
+    }
+    .bio_1 .rightfig img {
+        width: 83vw;
+    }
+    .bio_1 figcaption {
+        text-align: center !important;
+    }
+    .bio_1 .mineral-salt_cap{
+        width: 100%;
+    }
+    .bio_1 .note{
+        width: 92%;
+    }
+    /* Chem_Unit 4 */
+    #chem1{
+        padding: 0 2rem;
+    }
+    .atom .leftfig img, .jj_model .rightfig img, .periodic_table img, .ionic_bond .leftfig img, .covalent_bond .rightfig img, .metallic .leftfig img, .gp1_metals .rightfig img, .gp7 .rightfig img, .gp8 .rightfig img{
+        margin: auto;
+        display: block;
+        width: 98%;
+    }
+    .gold_foil figure{
+        width: 95%;
+        margin: auto;
+        display: block;
+    }
+    .gold_foil .leftfig iframe{
+        width: 80vw;
+        height: 50vw;
+        margin-right: 5rem;
+    }
+    .gold_foil{
+        margin-top: 10%;
+    }
+    .mass_charge_content .content1, .periodic_content .content1{
+        width: 100%;
+    }
+    .mass_charge_content .content2, .periodic_content .content1{
+        padding-left: 0;
+    }
+    .nacl_bond{
+        display: inline-block;
+    }
+    .nacl_bond figure img{
+        width: 65vw;
+        margin-top: 10%;
+    }
+    .periodic_table img{
+        width: 80vw;
+    }
+    .mass_charge table{
+        width: 80vw;
+        height: 40vh;
+        margin-bottom: 2rem;
+    }
+    .ele_table table{
+        width: 40%;
+        margin: auto;
+        font-size: 0.8rem;
+    }
+    #chem1 .gold_foil figcaption{
+        text-align: center !important;
+    }
+    .periodic_content{
+        flex-direction: column;
+    }
+
+    /* BIO_Unit 2 */
+    .bun_2 figure{
+        width: 80%;
+        display: block;
+        margin: auto;
+        margin-left: 0 !important;
+    }
+    .bun_2 figure img{
+        width: 80%;
+        display: block;
+        margin: auto;
+    }
+    .bun_2 figure figcaption{
+        margin-left: 0 !important;
+        text-align: center;
+    }
+    .bun_2 .leftfig, .bun_2 .clearfix .fungus{
+        margin-right: 0;
+    }
+    .bun_2 .clearfix .note, .bun_2 .energyflow .note, .bun_2 .dcp .note{
+        width: 80vw;
+    }
+    .plant_sec figure .stranglerfig, .plant_sec figure .weed, .plant_sec .spruce, 
+    .animal_sec figure .sealion, .animal_sec figure .earthworm, .animal_sec figure .eagle, .animal_sec figure .decomposer, 
+    .sts_sec figure .pollution, .sts_sec figure .wetland, .sts_sec figure .rainforest, .sts_sec figure .coralreef, .sts_sec figure .ramsar, 
+    .sts_sec figure .ozone, .sts_sec figure .sunlight, .clearfix .habitat, .clearfix .population, .clearfix .foodchain, .clearfix .symbiosis, .bun_2 .clearfix .fungus, .bun_2 figure{
+        width: 90%;
+        margin: auto;
+        display: block;
+    }
+    .plant_sec .rightfig, .plant_sec .leftfig_weed, 
+    .animal_sec .rightfig_sealion, .animal_sec .leftfig_earthworm, .animal_sec .rightfig_eagle, .animal_sec .rightfig_decomposer, 
+    .sts_sec .leftfig_fert, .sts_sec .rightfig_wetland, .sts_sec .leftfig_rain, .sts_sec .rightfig_coral, .sts_sec .leftfig_preserve, 
+    .sts_sec .leftfig_ozone, .sts_sec .leftfig_sunlight{
+        width: 100%;
+    }
+    .bun_2 .strangler-sec{
+        width: 90vw;
+    }
+    #bun_2{
+        padding: 0 2rem;
+    }
+
+    /* Chem_Unit 5 */
+    .endothermic .rightfig .endo_pic, .exothermic figure img{
+        margin: auto;
+        display: block;
+        width: 98%;
+    }
+    .react_or_process .content1{
+        width: 98%;
+        margin-bottom: 20%;
+    }
+    .exothermic .exo_content iframe{
+        width: 95%;
+        height: 50vw;
+        margin: auto;
+        display: block;
+    }
+    .exo-1, .exo-2, .exo-3, .exo-4{
+        margin: 15rem 0;
+    }
+    .exo2_content, .exo3_content, .exo4_content{
+        padding-top: 0;
+    }
+
+    /*CHEM UNIT8*/
+    .chem_8 iframe, .catalytic_vid{
+        width: 100%;
+        height: 50vw;
+        margin: auto;
+        display: block;
+    }
+    .chem_8 .leftfig img{
+        width: 74vw;
+    }
+    .chem_8 .rightfig img {
+        width: 74vw;
+    }
+    .chem_8 figcaption {
+        text-align: center !important;
+    }
+    .chem_8 .more_collision figcaption, .chem_8 .concentration_row figcaption{
+        text-align: left !important;
+    }
+    .chem_8 .reaction_pic{
+        height: 47vw;
+    }
+    .chem_8 .rate3_pic{
+        height: 50vw;
+    }
+    .chem_8 .collision_pic{
+        width: 90%;
+        height: auto;
+    }
+    .chem_8 .middle-sec{
+        margin: 0;
+    }
+    .chem_8 .experiment1_pic{
+        width: 74vw;
+        height: 50vw;
+    }
+    .chem_8 .catalytic_pic{
+        width: 74vw;
+        height: 55vw;
+    }
+    .chem_8 .concentration-graph_pic{
+        width: 82%;
+        height: auto;
+    }
+
+    /*FOOTER*/
+    .logo_footer{
+        width: 8rem;
+    }
+    .links1, .links2{
+        line-height: 1.6rem;
+        font-size: 1rem;
+    }
+    .social-media{
+        margin: 1rem;
+    }
+    .social-media .icons i{
+        font-size: 1.2rem;
+        width: 22%;
+        transition: 0.3s ease-in-out;
+    }
+    .msg_title{
+        font-size: 1.2rem;
+    }
+    input[type=text]{
+        padding: 0.4rem 0.8rem;
+        box-sizing: border-box;
+    }
+    .msg{
+        width: 45%;
+    }
+    .footer-bottom{
+        padding: 0.2rem;
+    }
+    .footer-bottom a{
+        font-size: 0.8rem;
+    }
+
+    /*SUBJECT*/
+    .unit-text{
+        width: 100%;
+        height: 100%;
+    }
+    .unit-right{
+        padding: 2rem;
+        font-family: 'Didact Gothic', sans-serif;
+    }
+    .unit-right h3{
+        font-size: 1.3rem; 
+    }
+    .unit-right p{
+        font-size: 0.92rem;
+        text-align: justify;
+    }
+    .unit-body{
+        display: block;
+        width: 60vw;
+    }
+    .subcategory-body .unit-img img{
+        width: 60vw;
+        height: 100%;
+    }
+    .unit-right{
+        padding: 1.5rem;
+    }
+
+    /*CHEM unit 6 start*/
+    .chem6_main figure img{
+        margin: auto;
+        display: block;
+        width: 98%;
+    }
+    .acid .acid_content, 
+    .displacement .displacement_content, 
+    .water .water_content{
+        padding-top: 15rem;
+    }
+    .oxygen figure iframe, .water figure iframe, .acid figure iframe, .displacement figure iframe{
+        width: 80vw;
+        height: 37vh;
+        margin: auto;
+        display: block;
+    }
+    .reactivity-series .r-series1 img, .reactivity-series .r-series2 img{
+        width: 90%;
+    }
+    .reactivity-series .r-series2 img{
+        padding-top: 5%;
+    }
+    .carbon figure img{
+        margin-left: 0;
+    }
+
+    /*TIMER*/
+    .timer-wrap .time span{
+        width: 6rem;
+    }
+    .time span.colon{
+        width: 0.5rem;
+    }
+    .timer-wrap .buttons{
+        text-align: center;
+        margin-top: 1.2rem;    
+    }
+    .buttons button{
+        padding: 0.6rem 1.8rem;
+        font-size: 1.2rem;
+    }
+    /* PHYS Unit-9 */
+    .phys10_main figcaption{
+        font-style: italic;
+        font-size: 1rem;
+        text-align: center;
+    }
+    .mass_pic figure .beam_pic1, 
+    .mass_pic figure .beam_pic2, 
+    .mass_pic figure .spring_pic, 
+    /* .measure_volume figure img,  */
+    .density figure .density_pic,
+    .cal_dens figure img, 
+    .cal_pressure figure img
+    .density figure img, 
+    .he-balloon figure img, 
+    .cal_dens figure img, 
+    .cal_pressure figure img, 
+    .liquid_pres figure img, 
+    .water_density figure img, 
+    .turn figure img, 
+    .center_gravity figure img, 
+    .moment_inner figure img, 
+    .moment_cal figure img
+    {
+        width: 90%;
+        display: block;
+        margin: auto;
+    }
+    .mass_pic{
+        display: inline-block;
+    }
+    .density .take_space{
+        padding-top: 1rem;
+    }
+    .measure_volume figure{
+        margin-left: 0;
+    }
+    .measure2_3, .unit_change{
+        flex-direction: column;
+    }
+    /* Phys Unit-10  */
+    .static figure, .acdc figure{
+        width: 99%;
+        margin: auto;
+        display: block;
+        margin-bottom: 8%;
+    }
+    .static figure iframe, .acdc figure iframe{
+        width: 99%;
+        height: 33vh;
+        margin: auto;
+        display: block;
+    }
+    .lightning figure img, 
+    .lightning_rod figure img, 
+    .ele-force figure img, 
+    .charge_fric figure img, 
+    .charge_fric figure img, 
+    .charge_induct .rightfig img, 
+    .charge_induct .leftfig img, 
+    .ele-intro1 figure img, 
+    .ele-intro2 figure img,
+    .wetbattery figure img,  
+    .current figure img, 
+    .voltage figure img, 
+    .insulator figure img, 
+    .conductor figure img, 
+    .fuse figure img, 
+    .resistor figure img, 
+    .ammeter figure img, 
+    .voltmeter figure img, 
+    .series figure img, 
+    .parallel figure img{
+        width: 95%;
+        display: block;
+        margin: auto;
+    }
+    .lightning figure, .lightning_rod figure, .ele-intro2 figure, .current figure, .insulator figure, .conductor figure, .fuse figure, .resistor figure{
+        margin-left: 0;
+    }
+    .ele-force figure{
+        margin-bottom: 3rem;
+    }
+    .ele-force figure, .charge_fric figure, .current figure, .ele-intro1 figure, .wetbattery figure, .voltage figure, .ammeter figure, .voltmeter figure{
+        margin-right: 0;
+    }
+    .induc_img, .connection{
+        flex-direction: column;
+    }
+    /* Phys Unit-11 */
+    .phys11_main figcaption{
+        font-style: italic;
+        font-size: 1rem;
+        text-align: center;
+    }
+    .fossil figure img, 
+    .crude figure img, 
+    .energy-source figure img, 
+    .dams figure img, 
+    .impoundment figure img, 
+    .division figure img, 
+    .pumped figure img, 
+    .conduction figure img, 
+    .thermal figure img, 
+    .heat-conduction figure img, 
+    .heat-conduction .t1 figure img, 
+    .heat-conduction .t3 figure img, 
+    .heat-convection figure img, 
+    .heat-convection .convec1 figure img, 
+    .heat-convection .convec3 figure img, 
+    .heat-convection .convec2 figure img, 
+    .convection figure img, 
+    .radiation figure img, 
+    .flask figure img, 
+    .evaporation figure img{
+        width: 95%;
+        display: block;
+        margin: auto;
+    }
+    .black figure iframe{
+        width: 85vw;
+        display: block;
+        margin: auto;
+    }
+    .fossil figure, .energy-source figure, .dams figure, .conduction figure, .thermal figure, .convection figure, .radiation figure, .flask figure{
+        margin-right: 0;
+        margin-bottom: 3rem;
+    }
+    .crude figure, .impoundment figure, .division figure, .pumped figure, .evaporation figure{
+        margin-left: 0;
+    }
+    .heat-conduction .inner1, .heat-conduction .inner2, .heat-convection .inner1, .heat-convection .inner2{
+        flex-direction: column;
+    }
+
+    /*RATING*/
+    .rating-wrap{
+        width: 85%;
+    }
+    .rating-parent{
+        padding: 2.5rem 2.5rem 0.5rem 2.5rem;
+    }
+
+    /*EVENT*/
+    .event2-section{
+        padding: 5rem;
+    }
+    .event2-wrap{
+        width: 70%; 
+        display: flex;
+        flex-direction: column;
+    }
+    .event-item{        
+        width: 15rem;
+        padding: 1.6rem 1.8rem;
+        margin-bottom: 2rem;
+    }
+    .upcoming-item{
+        display: block;
+        position: relative; 
+    }
+    .upcoming-item .left{
+        width: 100%;
+        align-items: flex-start;
+    }
+    .upcoming-item img{
+        width: 9.5rem;
+        height: 9.5rem;
+    }
+    .upcoming-item a{
+        position: absolute;
+        bottom: 0;
+        left: 11rem;
+        padding: 0.35rem 0.6rem;
+        font-size: 0.75rem;
+    }
+    .upcoming-item p.org{
+        font-size: 1.05rem;
+    }
+    .upcoming-item p{
+        font-size: 0.85rem;
+        line-height: 1.1rem;
+    }
+    .eventbanner-wrap{
+        display: flex;
+        flex-direction: column;
+    }
+    .eventbanner-content{
+        width: 100vw;
+        padding: 3rem 4rem 5rem;
+    }
+    .eventbanner-section img{
+        width: 100vw;
+    }
+    .event-bar{
+        position: absolute;
+        left: 5%;
+        bottom: 68%;
+        width: 90%;
+        background-color: #539B9F;
+        padding: 1.5rem 2rem;
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-family: 'Didact Gothic', sans-serif;
+    }
+    .eventbanner-content h1{
+        font-size: 2.1rem;
+        margin-bottom: 1.6rem;
+        line-height: 2.4rem;
+    }
+    .event-bar .item{
+        padding-right: 0.6rem;
+        border-right: 1px solid #F6F6F2;
+    } 
+    .event-bar .item i{
+        font-size: 2rem;
+        margin: 0.2rem 0.65rem 0 0;
+    }
+    .event-bar .item h6{
+        font-size: 0.85rem;
+        margin-bottom: 0.1rem;
+    }
+    .event-bar .item p{
+        font-size: 0.75rem;
+        margin: 0;
+    }
+    .eventbar-button a{
+        padding: 0.35rem 0.6rem;
+        font-size: 0.75rem;
+    }
+}
+
+@media (max-width:700px) {
+    .bio3_main .leftfig img {
+        width: 80vw;
+    }
+
+    .bio3_main .rightfig img {
+        width: 86vw;
+    }
+
+    .bio3_main .keytype1_pic {
+        width: 82vw;
+    }
+
+    .bio3_main .keytype2_pic {
+        width: 85vw;
+    }
+
+    .bio3_main .variation_pic {
+        width: 80vw;
+    }
+
+    .bio3_main .genes_pic {
+        height: 50vw;
+    }
+    #bio3_main figcaption{
+        text-align: center !important;
+    }
+    /*Chem Unit 7*/
+    .chem_7 .salt-img{
+        width: 75vw;
+        height: 65vw;
+    }
+    .chem_7 .leftfig img {
+        width: 75vw;
+    }
+
+    .chem_7 .rightfig img {
+        width: 86vw;
+    }
+    .chem_7 figcaption {
+        text-align: center !important;
+    }
+    .chem_7 .method{
+        width: 90%;
+    }
+    .chem_7 .titration_pic{
+        height: 80vw;
+    }
+    .chem_7 .zinc_pic{
+        height: 110vw;
+    }
+    .chem_7 .copper-oxide_pic{
+        height: 110vw;
+    }
+    .chem_7 .universal-indicator_pic, .litmus_pic, .phenol_pic, .methyl_pic{
+        height: 78vw;
+    }
+    /*Chem Unit 7*/
+
+    /*RATING*/
+    .rating-wrap{
+        width: 90%;
+    }
+    .rating-parent{
+        padding: 2.5rem 2.2rem 0.5rem 2.2rem;
+    }
+    .rating-item hr{
+        margin: 0.7rem 0;
+    }
+
+    /*EVENTS*/
+    .eventbanner-content{
+        padding: 2rem 3rem 5rem;
+    }
+    .event-bar{
+        position: absolute;
+        left: 0%;
+        bottom: 68%;
+        width: 100%;
+        padding: 1.5rem 1.2rem;
+        border-radius: 0;
+    }
+    .eventbanner-content h1{
+        font-size: 2rem;
+        margin-bottom: 1.4rem;
+        line-height: 2.2rem;
+    }
+    .event-bar .item{
+        padding-right: 0.6rem;
+        border: none;
+    } 
+    .event-bar .item i{
+        font-size: 1.7rem;
+        margin: 0.2rem 0.65rem 0 0;
+    }
+    .event-bar .item h6{
+        font-size: 0.8rem;
+        margin-bottom: 0.1rem;
+    }
+    .event-bar .item p{
+        font-size: 0.65rem;
+        margin: 0;
+    }
+    .eventbar-button a{
+        padding: 0.3rem 0.5rem;
+        font-size: 0.65rem;
+    }
+}
+@media (max-width: 670px){
+    /* SLIDER */
+    #slogan-slider a{
+        font-size: 0.7rem;
+        top: 66%;
+    }
+    /*PURPOSE*/
+    .purpose-body{
+        display: block;
+        position: relative;
+    }
+    .purpose-img img{
+        width: 100vw;
+        height: auto;
+    }
+    .purpose-text{
+        width: 100%;    
+    }
+    .purpose-text{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.7);
+        color: #f6f6f2;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        opacity: 0;
+        transition: opacity 0.5s;
+        margin: 0;
+    }
+    .purpose-text > *{
+        transform: translateY(20px);
+        transition: transform 2s;
+    }
+    .purpose-text:hover{
+        opacity: 0.8;
+    }
+    .purpose-text:hover > *{
+        transform: translateY(0);
+    }
+    .purpose-text:hover{
+        background: #1D4145;
+        transition: 1s;
+    }
+    .purpose-text h2{
+        color: #f6f6f2;
+    }
+
+    /*RATING*/
+    .rating-wrap{
+        width: 83%;
+    }
+    .rating-parent{
+        padding: 1.8rem 1.8rem 0.4rem 1.8rem;
+    }
+    .rating-item{
+        margin-bottom: 2rem;
+    }
+    .rating-item img{
+        width: 4.5rem;
+        height: 4.5rem;
+        margin-right: 1rem;
+    }
+    .rating-item h5{
+        font-size: 1.1rem;
+        margin-top: 0.3rem;
+    }
+    .rating-item span{
+        font-size: 1.1rem;
+    }
+
+    /* PLANNER */
+    .todo-container{
+        flex-direction: column;
+      }
+      .todo-container .inner-planner{
+        width: 70%;
+        display: block;
+        margin: auto;
+      }
+}
+
+@media (max-width: 600px){
+    /*SUBJECTS CATEGORY*/
+    .subcategory-body{
+        width: 100%;
+        padding: 5% 10%;
+    }
+    .subcategory-body .unit-img img{
+        width: 100%;
+        height: auto;
+    }
+    .unit-text{
+        width: 100%;
+        height: 100% /*95%*/;
+        padding: 0 8% -1.5rem;
+    }
+
+    /*RATING*/
+    .rating-wrap{
+        width: 100%;
+    }
+    .rating-parent{
+        padding: 2.5rem 2.2rem 0.5rem 2.2rem;
+    }
+    .rating-item hr{
+        margin: 0.5rem 0;
+    }
+    .rating-item p{
+        text-align: left;
+    }
+
+    /*EVENT*/
+    .upcoming-section{
+        padding: 2rem 1rem 5rem;
+    }
+    .upcoming-item{
+        margin-bottom: 4rem; 
+    }
+    .upcoming-item .left{
+        width: 100%;
+        align-items: flex-start;
+    }
+    .upcoming-item img{
+        width: 8rem;
+        height: 8rem;
+        margin-right: 1rem;
+    }
+    .upcoming-item h6{
+        font-size: 1.15rem;
+        margin-bottom: 0.3rem;
+    }
+    .upcoming-item a{
+        position: absolute;
+        bottom: -15%;
+        left: 9rem;
+        padding: 0.25rem 0.5rem;
+        font-size: 0.65rem;
+    }
+    .upcoming-item p.org{
+        font-size: 0.87rem;
+        margin-bottom: 0.4rem;
+    }
+    .upcoming-item p{
+        font-size: 0.76rem;
+        line-height: 1rem;
+    }
+    .eventbanner-content{
+        padding: 2rem 3rem 4.5rem;
+    }
+    .event-bar{
+        position: absolute;
+        left: 0%;
+        bottom: 62%;
+        width: 100%;
+        padding: 1.5rem 1.2rem;
+        border-radius: 0;
+    }
+    .eventbar-button{
+        display: none;
+    } 
+}
+
+
+@media (max-width: 570px){
+    .sign-container form{
+        padding: 0 24px;
+    }
+    .sign-image{
+        display: none;
+    }
+    .panel .content{
+        padding: 8px 16px;
+    }
+    .sign-container:before{
+        bottom: 70%;
+        left: 50%;
+    }
+    .sign-container.sign-up-mode:before{
+        bottom: 30%;
+        left: 50%;
+    }
+}
+
+@media (max-width: 500px){
+    /*SLIDER*/
+    #subject-slider img{
+        float: none;
+    }
+    .sub_slider{
+        top: 25%;
+        margin-left: 2.5rem;
+    }
+    #subject-slider img{
+        width: 50vw;
+    }
+    .subject-slider-content{
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    .subject-slider-content{
+        top: 65%;
+        margin-left: 23%;
+        margin-top: 3%;
+    }
+    .social-media .icons .social-icons{
+        padding: 0 0.2rem;
+    }
+    .social-media .icons{
+        margin-left: 38%;
+    }
+
+    /*FOOTER*/
+    #timeline .timeline-item .timeline-content{
+        width: 85%;
+        float: right;
+    }
+    .line{
+        margin-top: 10%;
+    }
+    /*TEAM*/
+    .members-card{
+      margin: 13% 5%;
+    }
+    .memb-conatiner{
+        height: 160vh;
+        margin-top: 2rem;
+    }
+
+    /*SUBJECT*/
+    .unit-body{
+        width: 72vw;
+    }
+    .unit-right h3{
+        font-size: 1.1rem; 
+    }
+    .unit-right p{
+        margin-bottom: 7px;
+        font-size: 0.9rem;
+    }
+
+    /*TIMER*/
+    .timer-wrap .time{
+        height: 70px;
+        padding: 0 0.8rem;
+    }
+    .timer-wrap .time span{
+        width: 4rem;
+        font-size: 2.4rem;
+    }
+    .time span.colon{
+        width: 0.5rem;
+    }
+    .buttons button{
+        padding: 0.5rem 1.2rem;
+        font-size: 1rem;
+    }
+    
+    /*MUSIC*/
+    .music-container{
+        padding: 1.1rem 1.4rem;
+        margin: 5rem 0;
+    }
+    .music-section h2{
+        font-size: 2.4rem;
+    }
+    .img-container img{
+        width: 6.2rem;
+        height: 6.2rem;
+    }   
+    .action-btn{
+        font-size: 1.1rem;
+        padding: 0.4rem;
+        margin: 0 0.6rem;
+    }
+    .action-btn-big{
+        font-size: 1.3rem;
+    }
+    .img-container::after{
+        position: absolute;
+        left: 46%;
+        bottom: 84%;
+    }
+    .music-info{
+        padding: 0.5rem 0.4rem 0.2rem 6.8rem;
+    }
+    .music-info h5{
+        font-size: 1rem;
+    } 
+
+    /*RATING*/
+    .rating-section{
+        padding: 4rem;
+    }
+    .rating-wrap{
+        width: 100%;
+    }
+    .rating-parent{
+        padding: 1.4rem 1.4rem 0 1.4rem;
+        border-radius: 1.8rem;
+    }
+    .rating-wrap h2{
+        font-size: 2.4rem;
+    }
+    .rating-item{
+        margin-bottom: 2rem;
+    }
+    .rating-item img{
+        width: 3.5rem;
+        height: 3.5rem;
+        margin-right: 0.7rem;
+    }
+    .rating-item h5{
+        font-size: 1rem;
+        margin: 0.2rem 0 0.1rem;
+    }
+    .rating-item span{
+        font-size: 0.9rem;
+    } 
+    .rating-item p{
+        font-size: 0.9rem;
+    }
+
+    /*EVENTS*/
+    .eventbanner-content{
+        padding: 2rem 3rem 5rem;
+    }
+    .event-bar{
+        position: absolute;
+        left: 0%;
+        bottom: 55%;
+        width: 100%;
+        padding: 1.5rem 1.2rem;
+        border-radius: 0;
+    }
+    .event-bar .item{
+        padding-right: 0.6rem;
+        border: none;
+    }     
+    .eventbanner-content{
+        padding: 1.5rem 2.5rem 4.5rem;
+    }
+    .eventbanner-content h1{
+        font-size: 1.55rem;
+        margin-bottom: 1.2rem;
+        line-height: 1.7rem;
+    }
+    .eventbanner-content p{
+        font-size: 0.8rem;
+        line-height: 1rem;
+    }
+    .event-bar .item{
+        padding-right: 0.6rem;
+        border: none;
+    } 
+    .event-bar .item i{
+        font-size: 1.6rem;
+        margin: 0.2rem 0.65rem 0 0;
+    }
+    .event-bar .item h6{
+        font-size: 0.7rem;
+        margin-bottom: 0.1rem;
+    }
+    .event-bar .item p{
+        font-size: 0.6rem;
+        margin: 0;
+    }
+    .eventbar-button a{
+        display: none;
+    }
+}
+@media (max-width:400px){
+    /* HEADER */
+    .header-right .sign-btn{
+        font-size: 0.8rem;
+        padding: 0.6rem 1.2rem;
+    }
+
+    /*SLIDER*/
+    #slogan-slider{
+        padding-bottom: 5rem;
+    }
+    #slogan-slider h1{
+        font-size: 2.3rem;
+        top: 27%;
+    }
+    #slogan-slider p{        
+        font-size: 1.2rem;
+        top: 49%;
+        width: 70%;
+    }
+    #slogan-slider a{
+        font-size: 0.8rem;
+        top: 68%;
+    }
+    .subject-slider-content h2{
+        font-size: 1.25rem;
+    }
+
+    /*RATING*/
+    .rating-section{
+        padding: 4rem;
+    }
+    .rating-parent{
+        padding: 1.4rem 1.4rem 0 1.4rem;
+        border-radius: 1.8rem;
+    }
+    .rating-wrap h2{
+        font-size: 2.4rem;
+    }
+    .rating-item{
+        margin-bottom: 2rem;
+    }
+    .rating-item img{
+        width: 3rem;
+        height: 3rem;
+        margin-right: 0.7rem;
+    }
+    .rating-item h5{
+        font-size: 1rem;
+        margin: 0.2rem 0 0.1rem;
+    }
+    .rating-item span{
+        font-size: 0.9rem;
+    } 
+    .rating-item p{
+        font-size: 0.9rem;
+    }
+
+    /*EVENT*/
+    .event2-section{
+        padding: 5rem;
+    }
+    .event2-wrap{
+        width: 70%; 
+        display: flex;
+        flex-direction: column;
+    }
+    .event-item{        
+        width: 12rem;
+        padding: 1.5rem 1.5rem;
+        margin-bottom: 2rem;
+    }
+    .event-item i{
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+    .event-item h5{
+        font-size: 1.1rem;
+        margin-bottom: 0.5rem;
+    }
+    .event-item p{
+        font-size: 0.85rem;
+        margin-bottom: 1.2rem;
+    }
+    .event-item a{
+        padding: 0.3rem 0.8rem;
+        font-size: 0.85rem;
+    }
+
+    .eventbanner-content{
+        padding: 1rem 2rem 5rem;
+    }
+    .event-bar{
+        position: absolute;
+        left: 0%;
+        bottom: 50%;
+        width: 100%;
+        padding: 1.2rem;
+        border-radius: 0;
+    }
+    .event-bar .item{
+        padding-right: 0.6rem;
+        border: none;
+    }
+    .event-bar .item i{
+        padding-bottom: 0.5rem;
+    }
+    .eventbanner-content h1{
+        font-size: 1.3rem;
+        margin-bottom: 1rem;
+        line-height: 1.5rem;
+    }
+    .eventbanner-content p{
+        font-size: 0.75rem;
+        line-height: 1rem;
+    }
+    .event-bar .item{
+        padding-right: 0.6rem;
+        border: none;
+        display: flex;
+        flex-direction: column;
+    } 
+    .event-bar .item i{
+        font-size: 1.6rem;
+        margin: 0.2rem 0.65rem 0 0;
+    }
+    .event-bar .item h6{
+        font-size: 0.7rem;
+        margin-bottom: 0.1rem;
+    }
+    .event-bar .item p{
+        font-size: 0.6rem;
+        margin: 0;
+    }
+    .eventbar-button a{
+        display: none;
+    }
+}
+@media (max-width:374px){
+    /*SLIDER*/
+    #slogan-slider a{
+        font-size: 0.8rem;
+        top: 75%;
+    }
+
+    /*TIMER*/
+    .timer-wrap .time{
+        height: 60px;
+        padding: 0 0.5rem;
+    }
+    .timer-wrap .time span{
+        width: 3rem;
+        font-size: 2rem;
+    }
+    .time span.colon{
+        width: 0.5rem;
+    }
+    .timer-wrap .buttons{
+        margin-top: 1rem;    
+    }
+    .buttons button{
+        padding: 0.3rem 1rem;
+        margin: 0 0.2rem;
+        font-size: 1rem;
+    }
+
+    /*MUSIC*/
+    .img-container img{
+        width: 6rem;
+        height: 6rem;
+    } 
+    .img-container::after{
+        position: absolute;
+        left: 45%;
+        bottom: 74%;
+    }
+    .music-info{
+        padding: 0.5rem 0.4rem 0.2rem 6.6rem;
+    }
+    .music-info h5{
+        font-size: 1rem;
+    }
+
+    /*RATING*/
+    .rating-section{
+        padding: 3rem;
+    }
+    .rating-wrap{
+        width: 95%;
+    }
+    .rating-parent{
+        padding: 1.2rem 1.2rem 0 1.2rem;
+        border-radius: 1.5rem;
+    }
+    .rating-item{
+        margin-bottom: 2rem;
+    }
+    .rating-item img{
+        width: 3.3rem;
+        height: 3.3rem;
+        margin-right: 0.5rem;
+    }
+    .rating-item h5{
+        font-size: 0.9rem;
+        margin: 0.2rem 0 0;
+    }
+    .rating-item span{
+        font-size: 0.7rem;
+    }     
+}

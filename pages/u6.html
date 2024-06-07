@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reactivity - Academic Diary</title>
+    <link rel="shortcut icon" href="../images/lg3.png">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="../style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+
+    <!-- FONTS -->
+    <link href="https://fonts.googleapis.com/css2?family=Amiri+Quran&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- HEADER START -->
+    <div class="header-section">
+        <div class="header-top">
+            <div class="header-left">
+                <a href="../index.html"><img class="logo" src="../images/lg1.png" alt="Academic Diary"
+                        title="Click here to return to the Home Page"></a>
+            </div>
+            <div class="header-middle">
+                <a href="../index.html"><img class="logo-text" src="../images/lg2.png" alt="Academic Diary"
+                        title="Click here to return to the Home Page"></a>
+            </div>
+            <div class="header-right">
+                <a href="sign.html" class="sign-btn">Sign in</a>
+                <i class="fa-solid fa-bars" id="menu-icon"></i>
+                <i class="fa-solid fa-xmark" id="close-icon"></i>
+            </div>
+        </div>
+        <div class="header-bottom">
+            <div class="header-navs">
+                <ul class="navs">
+                    <li><a href="../index.html">Home</a></li>
+                    <li>
+                        <a href="subjects.html">Subjects<i class="fa-solid fa-caret-down"></i></a>
+                        <div class="dropdown">
+                            <ul>
+                                <li class="dropdown-link"><a href="subjects.html#biology">Biology</a></li>
+                                <li class="dropdown-link"><a href="subjects.html#chemistry">Chemistry</a></li>
+                                <li class="dropdown-link"><a href="subjects.html#physics">Physics</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="tools.html">Study Tools</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- HEADER_END -->
+
+    <!-- Chem Unit-6 START -->
+    <div class="container-fluid chem6_main" id="chem6">
+        <h1 class="text-center pt-5">Reacitivity</h1>
+        <div class="react_intro mt-5 pb-4">
+            <p>To get reactivity series, let metals react with 3 things:</p>
+            <p class="ms-4 mt-3">
+                - Oxygen<br/>
+                - Water<br/>
+                - Dilute acid
+            </p>
+        </div>
+
+        <hr/>
+        
+        <div class="oxygen mt-5" id="oxygen">
+            <h2 class="fw-bold mb-5 pt-3">Metal reactions with Oxygen</h2>
+            <figure class="leftfig">
+                <iframe class="oxygen-vid rounded" src="https://www.youtube.com/embed/-xVgs60LmXg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </figure>
+            <div class="oxygen_content mt-5 pt-5">
+                <p class="">Many metals react with oxygen → when it is hot enough</p>
+                <p class="fst-italic mt-4 mb-4">Metal + Oxygen → Metal oxide</p>
+                <p class="fw-bold fst-italic">
+                    Sodim + Oxygen → Sodium oxide<br/>
+	                4(Na) + O<sub>2</sub> → 2(Na<sub>2</sub>O)
+                </p>
+                <br/>
+                <p class="pt-5">
+                    Sodium 	    → 	react very quickly<br/>
+                    Magnesium 	→	react quickly<br/>
+                    Iron 		→ 	react slowly<br/>
+                    Copper	→ 	react when burned<br/>
+                    Gold, silver	→ 	don’t react
+                </p>
+                <p class="fw-bold mt-5">Reaction of Group-1 elements with oxygen</p>
+                <p class="mt-3">Metals in Group 1: </p>
+                <p class="ms-4 mt-3">
+                    - softer than other metals<br/>
+                    - more reactive<br/>
+                    - must be stored under oil (react strongly with air moisture and can explode)
+
+                </p>
+                <p class="mt-3">When lithium, sodium or potassium are taken out, surfaces are dull (not shiny)</p>
+                <p class="ms-4 mt-3">
+                    - Because metals react with oxygen in air<br/>
+                    - Surface becomes covered with metal oxide<br/>
+                    - When the pieces are cut newly → surfaces shiny
+                </p>
+            </div>      
+        </div>
+        <hr class="mt-5"/>
+        <div class="water mt-5" id="water">
+            <h2 class="fw-bold mb-5 pt-3">Metal reactions with Water</h2>
+
+            <p class="mt-5">Metal reactions with water</p>
+            <p class="mb-5 ms-4 mt-3">
+                - Cold water<br/>
+                - Hot water<br/>
+                - Steam
+            </p>
+            <figure class="leftfig">
+                <iframe class="water-vid rounded" src="https://www.youtube.com/embed/Yj70bUtXd4Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </figure>
+            <div class="water_content mt-5">
+                <p>Not all the metals react with water vigoriously.</p>
+                <p class="fst-italic mt-4 mb-4">Metal 		+ 	Water		→ 	Metal hydroxide 	+ 	Hydrogen</p>
+                <p class="fw-bold fst-italic">
+                    Sodim + Oxygen → Sodium oxide<br/>
+                    Mg + 2H<sub>2</sub>O → Mg(OH)<sub>2</sub> + H<sub>2</sub>
+                </p>
+                <br/>
+                <p class="pt-5">
+                    Calcium		→ 	react slowly<br/>
+                    Magnesium	 	→	react very slowly (almost no reaction)<br/>
+                    Mercury, Gold	→ 	don’t react
+                </p>
+                <br/>
+                <p class="fw-bold mt-5">Reaction of Group-1 metals with water</p>
+                <p class="mt-3">Metals in Group 1: </p>
+                <p class="ms-4">
+                    - Lithium    	→	react with water to produce lithium hydroxide and hydrogen (gas bubbles)<br/>
+                    - Sodium  	→ 	more reactive than lithium with water<br/>
+                    - Potassium 	→	more reactive than sodium (so much heat generated that hydrogen gas caught fire)
+
+                </p>
+            </div>
+        </div>
+        <hr class="mt-5"/>
+        <div class="steam pt-5">
+            <h2 class="fw-bold mb-5 pt-3">Metal reactions with Steam</h2>
+            <figure class="leftfig">
+                <img src="../images/steam.jpg" alt="Metals reaction with steam" title="Metals reaction with steam" class="steam_pic rounded me-5">
+            </figure>
+            <div class="steam_content mt-5 pt-3">
+                <p>Some metals will not react with cold or hot water as rapid as they react with steam.</p>
+                <p class="fst-italic mt-4 mb-4">Metal 		+ 	Steam	→ 	Metal oxide 	+ 	Hydrogen</p>
+                <p class="fw-bold fst-italic">
+                    Magnesium 	+ 	Steam	→ 	Magnesium oxide  +  Hydrogen<br/>
+                    Mg + H<sub>2</sub>O → MgO + H<sub>2</sub>
+                </p>
+                <br/>
+                <p class="pt-5 pb-4">
+                    Calcium		→ 	react slowly<br/>
+                    Magnesium	 	→	react very slowly (almost no reaction)<br/>
+                    Mercury, Gold	→ 	don’t react
+                </p>
+
+                <p class="mt-5">Steps:</p>
+                <p class="ms-4"><b>(1) </b>Put the cotton wool into the test tube and put some water in to get the wool soaked.</p>
+                <p class="ms-4 mt-3">
+                    <b>(2) </b>Place the test-tube on a stand and place some magnesium in the middle.<br/>
+                    > can use power to make the reaction quicker
+                </p>
+                <p class="ms-4 mt-3">
+                    <b>(3) </b>Put a stopper with a small glass tube <br/>
+                    > stopper  →  to stop the oxygen gas from coming inside (hydrogen + oxygen = explosive )<br/>
+                    > glass tube  → for gases inside that come out from the reaction to go out (or else steam and hydrogen might react and explode)
+                </p>
+                <p class="ms-4 mt-3">
+                    <b>(5) </b>Heat the magnesium for a few mins/secs first, then changed to heating the soaked cotton wool<br/>
+                    > Reaction starts<br/>
+                    > Hydrogen gas coming out from the end of small glass tube can be burnt
+                </p>
+            </div>    
+        </div>
+        <hr class="mt-5"/>
+        <div class="acid mt-5 mb-3" id="acid">
+            <h2 class="fw-bold mb-5 pt-3">Metal reactions with Acid</h2>
+
+            <p class="mt-5">Acids</p>
+            <p class="mb-5">
+                Sulfuric acid 	-	H<sub>2</sub>SO<sub>4</sub><br/>                
+                Nitric acid		- 	HNO<sub>3</sub><br/>
+                Hydrochloric acid	- 	HCl
+            </p>
+            <figure class="leftfig">
+                <iframe class="acid-vid rounded" src="https://www.youtube.com/embed/Na_6j9y9ke8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </figure>
+            <div class="acid_content mt-5">
+                <p class="">Most of the metals react with acid very rapidly.</p>
+                <p class="fst-italic mt-4 mb-4">Metal 		+ 	Acid		→ 	Salt	 	+ 	Hydrogen</p>
+                <p class="fw-bold fst-italic">
+                    Magnesium      +    Hydrochloric acid	    →   Magnesium chloride  +  Hydrogen<br/>
+	                Mg(s)		+ 	2HCl(aq)	→	MgCl<sub>2</sub>(aq)	 + 	H<sub>2</sub>(g)
+                </p>
+            </div>
+        </div>
+        <hr/>
+        <h2 class="fw-bold mb-5 text-center react-title" id="reactivity-series" >The Reactivty Series</h2>
+        <div class="reactivity-series">
+            <div class="r-series1 text-center">
+                <img src="../images/r_series1.png"  alt="The Reactivity Series of Metals" title="The Reactivity Series of Metals" class="rounded me-5">
+            </div>
+
+            <div class="r-series2 text-center">
+                <img src="../images/r_series2.png"  alt="The Reactivity Series of Metals" title="The Reactivity Series of Metals" class="rounded me-5">
+            </div>
+        </div>
+
+        <p class="note pop-note text-center py-1 mt-5 mx-auto mb-5">Only the elements above Hydrogen can react with acid<br/>
+            They're more reactive than hydrogen from acid and take the place of the metal kicking out the hydrogen.
+        </p>
+
+        <hr/>
+
+        <div class="displacement mt-5" id="displacement">
+            <h2 class="fw-bold mb-5 pt-3">Displacement Reactions</h2>
+
+            <p class="mt-5">Displacement reaction → occurs when a more reactive element pushes out a less reactive element from a compound and replaces it.</p>
+            <p class="mb-5 mt-3">
+                For displacement reaction to take place, less reactive metal must be in a compound and that compound must be liquid.
+
+            </p>
+            <figure class="leftfig">
+                <iframe class="acid-vid rounded" src="https://www.youtube.com/embed/KmhD8BmEFIo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </figure>
+            <div class="displacement_content mt-5 pb-5">
+                <p class="fw-bold mt-5">Iron and copper sulfate experiment</p>
+                <p class="mt-4 mb-4">
+                    When an iron nail is placed in copper sulfate, 
+                </p>
+                <p class="ms-4">
+                    - Iron nail become coated with copper<br/>
+                    - More reactive iron push our copper and react to form iron sulfate
+                </p>
+                <br/>
+
+                <p class="note pop-note dis-note text-center py-1 ">A more reactive metal can replace a less reactive one 
+                </p>
+                </p>
+            </div>
+        </div>
+
+        <h3 class="mb-5 pt-3"><u>Using displacement reactions</u></h3>
+        <div class="thermite mt-5">
+            <figure class="leftfig">
+                <img src="../images/thermite.png" alt="Metals reaction with steam" title="Metals reaction with steam" class="thermite_pic rounded me-5">
+            </figure>
+            <div class="thermite_content mt-3">
+                <p class="fw-bold mt-5">Thermite reaction</p>
+                <p class="mt-4 mb-4">Aluminium → displace iron from iron oxide when heated</p>
+                <p class="fw-bold fst-italic">
+                    Aluminum	+ 	Iron oxide	→ 	Aluminum oxide 	+ 	Iron<br/>
+                    2Al(s) 	+	Fe<sub>2</sub>O<sub>3</sub>(s)	→ 	Al<sub>2</sub>O<sub>3</sub>(s)	  +   	2Fe(s)
+                </p>
+                <p class="pt-5 pb-5">
+                    An exothermic reaction (release a lot of energy)
+                    Temperature gets so high that iron produced is molten
+                </p>
+                <p class="fst-italic">**melting point of iron = 1535 °C</p>
+                <br/>
+                <br/>
+                <p class="pt-5 pb-4">
+                    - This reaction is a thermite reaction and is used to wield rails together<br/>
+                    - Iron oxide and aluminum powder react in a container placed on the rails<br/>
+                    - Molten iron produced is shaped and used to join rails together
+                </p>
+                <p class="pb-4">To react → mixture has to be ignited → use another exo reaction (magnesium powder and barium nitrate) → provide energy to start displacement reaction</p>
+                <p>Thermite reaction = an exothermic reaction between metal powder and metal oxide</p>
+            </div>   
+        </div>
+        <br/>
+        <br/>
+        <div class="carbon mt-5 pb-5">
+            <figure class="rightfig">
+                <img src="../images/carbon.png" alt="Metals reaction with steam" title="Metals reaction with steam" class="thermite_pic rounded me-5">
+            </figure>
+            <div class="carbon_content mt-5 pt-3">
+                <p class="fw-bold">Displacement reaction using carbon</p>
+                <p class="mt-4">Carbon:</p>
+                <p class="pb-4">- Can be used to displace some metals from their compounds
+                - Will displace zinc, iron, tin, lead from their ores
+                </p>
+                <p class="pt-3 pb-5">
+                    Ore = a rock that contains a metal compound
+                </p>
+                <p class="pb-4">
+                    - Discovered that iron ore (mainly iron oxide) heated with charcoal at very high temperature produce molten. <br/>
+                    - This displacement reaction is still carried out today, but on a large scale in a blast furnace.
+                </p>
+                <p class="pb-4">To react → mixture has to be ignited → use another exo reaction (magnesium powder and barium nitrate) → provide energy to start displacement reaction</p>
+                <p class="fw-bold fst-italic">
+                    Iron oxide	+ 	Carbon	→ 	Iron 	+ 	Carbon dioxide<br/>
+	                Fe<sub>2</sub>O<sub>3</sub> (s)	+ 	3CO (s)	→ 	2Fe (s) 	+   	3CO<sub>2</sub> (g)
+                </p>
+            </div>   
+        </div>
+    </div>
+    <!-- Chem Unit-6 END -->
+
+    <!-- FOOTER_START -->
+    <div class="footer">
+        <div class="footer-wrap">
+            <div class="logo-wrap">
+                <div class="line">
+                </div>
+                <div class="logo">
+                    <a href="#"><img src="../images/AcademicDiary_Logo.png" alt="logo_footer" class="logo_footer"></a>
+                </div>
+                <div class="line">
+                </div>
+            </div>
+            <div class="footer_body">
+                <div class="links-wrap">
+                    <div class="links">
+                        <div class="links1">
+                            <a href="../index.html">Home</a><br />
+                            <a href="subjects.html">Subjects</a><br />
+                            <a href="events.html">Events</a>
+                        </div>
+                        <div class="links2">
+                            <a href="tools.html">Tools</a><br />
+                            <a href="about.html">About</a><br />
+                            <a href="../References.docx">Citations</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="social-media">
+                    <div class="icons">
+                        <a href="https://www.facebook.com/" class="text-light"><i
+                                class="fa-brands fa-facebook social-icons"></i></a>
+                        <a href="https://www.twitter.com/" class="text-light"><i
+                                class="fa-brands fa-twitter social-icons"></i></a>
+                        <a href="https://www.youtube.com/" class="text-light"><i
+                                class="fa-brands fa-youtube social-icons"></i></i></a>
+                        <a href="https://www.linkedin.com/" class="text-light"><i
+                                class="fa-brands fa-linkedin-in social-icons"></i></a>
+                    </div>
+                    <div class="line_vertical">
+                    </div>
+                </div>
+            </div>
+
+            <div class="msg-wrap">
+                <div class="msg_title">
+                    <label for="messageus">Message us!</label>
+                </div>
+                <div class="msg">
+                    <div class="input-group">
+                        <input type="text" type="reset" class="form-control footer-input" placeholder="Your message.">
+                        <button class="btn btn-outline-light" type="button" id="button-addon2">Send</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom text-center">
+                <div class="first-box">
+                    <a href="#">Terms & Conditions</a>
+                    <a href="#">Privacy Policy</a>
+                </div>
+                <div class="last-box">
+                    <a href="#">Copyright © 2023 AcademicDiary · All Rights Reserved</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- FOOTER_END -->
+
+    <script src="../javascript.js">
+
+    </script>
+</body>
+
+</html>

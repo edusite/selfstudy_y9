@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Material properties - AcademicDiary</title>
+    <link rel="shortcut icon" href="../images/lg3.png">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="../style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+
+    <!-- FONTS -->
+    <link href="https://fonts.googleapis.com/css2?family=Amiri+Quran&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- HEADER START -->
+    <div class="header-section">
+        <div class="header-top">
+            <div class="header-left">
+                <a href="../index.html"><img class="logo" src="../images/lg1.png" alt="Academic Diary"
+                        title="Click here to return to the Home Page"></a>
+            </div>
+            <div class="header-middle">
+                <a href="../index.html"><img class="logo-text" src="../images/lg2.png" alt="Academic Diary"
+                        title="Click here to return to the Home Page"></a>
+            </div>
+            <div class="header-right">
+                <a href="sign.html" class="sign-btn">Sign in</a>
+                <i class="fa-solid fa-bars" id="menu-icon"></i>
+                <i class="fa-solid fa-xmark" id="close-icon"></i>
+            </div>
+        </div>
+        <div class="header-bottom">
+            <div class="header-navs">
+                <ul class="navs">
+                    <li><a href="../index.html">Home</a></li>
+                    <li>
+                        <a href="subjects.html">Subjects<i class="fa-solid fa-caret-down"></i></a>
+                        <div class="dropdown">
+                            <ul>
+                                <li class="dropdown-link"><a href="subjects.html#biology">Biology</a></li>
+                                <li class="dropdown-link"><a href="subjects.html#chemistry">Chemistry</a></li>
+                                <li class="dropdown-link"><a href="subjects.html#physics">Physics</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="tools.html">Study Tools</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- HEADER_END -->
+
+    <!-- Chem Unit-1 START -->
+    <div class="container-fluid chem1_main" id="chem1">
+        <h1 class="text-center py-4">Material Properties</h1>
+        <div class="atom mt-5" id="atom">
+            <figure class="leftfig">
+                <img src="../images/atom.png" alt="Atom" title="Atom" class="rounded atom_pic">
+                <figcaption>An atom</figcaption>
+            </figure>
+            <div class="atom_content">
+                <h2 class="mb-4 fw-bold">Atom</h2>
+                <p class="mb-3">Atom in Greek means "cannot be split".</p>
+                <p class="mb-2">However, atom can be broken down into (3) parts,</p>
+                <p class="mt-3">- Proton ( positive (+) charge )</p>
+                <p class="mt-3">- Neutron ( neutral )</p>
+                <p class="fst-italic ms-3">(Protons and neutrons form the nucleus in the center)</p>
+                <p class="mt-3">- Electron ( negative (-) charge )</p>
+                <p class="fst-italic ms-3">(Electrons move around the nucleus)</p><br/>
+                <p class="mt-5">J.J Thompson discovered “electron” in the late 1890s.</p>
+                <p>Ernest Rutherford discovered “proton” in 1909 and “nucleus” in 1911.</p>
+                <p>James Chadwick discovered “neutron” in 1932.</p>
+            </div>
+        </div>
+
+        <div class="jj_model mt-5">
+            <figure class="rightfig">
+                <img src="../images/jj_model.png" alt="JJ Thompson's atom model" title="JJ Thompson's atom model" class="rounded jj_model_pic"/>
+                <figcaption>JJ Thompson's atom model</figcaption>
+            </figure>
+            <div class="jj_model_content">
+                <h3 class="mb-5"><u>JJ Thompson's proposal of the atom model</u></h3>
+                <p class="">Different parts of the atom were scattered throughout the structure.</p>
+                <p>An atom is made up of a positively charged sphere in which electrons are embedded.</p>
+            </div>
+        </div>
+
+        <div class="gold_foil">
+            <figure class="leftfig mt-3">
+                <iframe class="rounded me-5" src="https://www.youtube.com/embed/XBqHkraf8iE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <figcaption class="pb-4">Ernest Rutherford's Gold Foil Experiment</figcaption>
+            </figure>
+            <div class="goldfoil_content">
+                <h3 class="mb-5 pt-3"><u>Rutherford's Gold Foil Experiment</u></h3>
+                <p>Firing at gold foil with α (alpha) particles</p>
+                <p class="fst-italic fw-bold py-3">α (alpha) particles </p>
+                <p>- Positive particles</p>
+                <p>- Nucleus of Helium - 4 which consists of 2 protons & 2 neutrons</p>
+                <p>- Helium 4 - an isotope of helium</p>
+                <p class="fst-italic">(Isotope - each of 2 or more forms of the same element</p>
+                <p>- An equal number of protons but a different number of neutrons)</p>
+                <p class="fst-italic fw-bold pb-3 pt-5">Result</p>
+                <p>A few (about 1 in 8000) deflected in various directions.</p>
+                <p>Most of the particles passed straight.</p>
+                <p class="fst-italic fw-bold py-3">Conclusion</p>
+                <p>Atom is mostly empty space.</p>
+                <p>Positive particles are packed into a dense nucleus at the center.</p>
+                <p>The repelling of positive particles (protons & α (alpha) particles) makes them deflect.</p>
+            </div>
+        </div>
+
+        <div class="mass_charge mt-5">
+            <div class="atom_table">
+                <h3 class="text-center mt-5"><u>Mass and charge of electron, proton, and neutron</u></h3>
+                <br/>
+                <div class="table-responsive">
+                    <table class="table table-bordered mt-5 text-center">
+                        <thead>
+                        <tr>
+                            <th scope="col">Particle</th>
+                            <th scope="col">Relative Mass</th>
+                            <th scope="col">Relative Charge</th>
+                            <th scope="col">Charge / C</th>
+                            <th scope="col">Mass / kg</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <th scope="row">Protons</th>
+                            <td>1</td>
+                            <td>+ 1</td>
+                            <td>+ 1.6 × 10^-19</td>
+                            <td>1.67 × 10^-27</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Neutrons</th>
+                            <td>1</td>
+                            <td>neutral</td>
+                            <td>0</td>
+                            <td>1.67 × 10^-27</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Electrons</th>
+                            <td>0.0005</td>
+                            <td>- 1</td>
+                            <td>- 1.6 × 10^-19</td>
+                            <td>9.11 × 10^-31</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="mass_charge_content">
+                <div class="content1">
+                    <p class="fst-italic mb-3 mt-5 main">Number of electrons = number of protons (opposite charge)</p>
+                    <p>Up quark = (+ ⅔ e)</p>
+                    <p class="mb-3">Down quark = (- ⅓ e)</p>
+                    <p>Proton = 2 up quark + 1 down quark 10^-19</p>
+                    <p>(⅔ + ⅔) + (-⅓)</p>
+                    <p>4/3 + (-⅓)</p>
+                    <p class="mb-3">3/3 = +1</p>
+                    <p>Neutron = 1 up quark + 2 down quark</p>
+                    <p>⅔ + [(-⅓) + (-⅓)]</p>
+                    <p>⅔ + (-⅔)</p>
+                    <p class="mb-3">= 0</p>
+                    <p>Charge of proton = +1</p>
+                    <p>Charge of electron = -1</p>
+                    <p>Charge of neutron = 0</p>
+                    <p>Positive charge = negative charge</p>
+                    <p class="mb-3">Atom has <b>no</b> overall charge.</p>
+                </div>
+                <div class="content2 mb-5">
+                    <p class="pt-5"><b>Protons & neutrons</b> determine the <b>mass</b> of an atom.</p>
+                    <p><b>Electrons</b> determine the <b>size</b> of an atom.</p>
+                    <p class="mb-3">Proton is <b>1840 times heavier</b> than an electron so electrons are not considered for the mass of an atom.</p>
+                    <p>Atomic number = Number of protons or number of electrons</p>
+                    <p>Mass number(amu - atomic mass unit) = Number of protons + Number of neutrons</p>
+                    <p class="mb-3">Number of neutrons = mass number - atomic number</p>
+                    <p class="fw-bold">1 amu = 1.67 × 10-27 kg</p>
+                    <p class="fw-bold fst-italic">Mass number of H2SO4 (Sulfuric Acid)</p>
+                    <p>H = 1amu, S = 32amu, O = 16amu</p>
+                    <p>(1 × 2) + 32 + (16 × 4)</p>
+                    <p>= 98 amu</p>
+                </div>
+            </div>
+        </div>
+
+        <p class="note pop-note text-center pb-1 mb-4 mx-auto">- Hydrogen is the only element that doesn’t have neutrons. (Its isotopes have)
+            <br/>
+            - Atomic number differentiates one element from another.
+        </p>
+        <br/>
+
+        <hr/>
+        
+
+        <div class="periodic mt-5" id="periodic">
+            <div class="periodic_table">
+                <h2 class="fw-bold text-center mt-5">Periodic Table</h2>
+                <br/>
+                <img class="mt-3 rounded" src="../images/ptable.png" alt="Periodic Table" title="Periodic Table" class="periodic_img mx-auto d-block"/>
+            </div>
+            <div class="periodic_content">
+                <div class="content1">
+                    <p class="mb-3 mt-5">In the periodic table,</p>
+                    <p>7 periods (horizontal / rows)</p>
+                    <p>18 groups (vertical / columns) - with transition elements</p>
+                    <p class="mb-3">8 groups (vertical / columns) - without transition elements</p>
+                    <p>Total - 118 elements</p>
+                    <p>Natural - 94 elements</p>
+                    <p class="mb-3">Man-made - 24 elements</p>
+                </div>
+                <div class="content2">
+                    <p class="pt-5">Elements with the <b>same number of electrons in their outermost shell </b>are put in the <b>same group.</b></p>
+                    <p class="mb-3"><b>Period number</b> defines <b>the number of shells </b>each element has.</p>
+                    <p class="fw-bold fst-italic">Transitional line/dark line/zigzag line</p>
+                    <p><b>Left </b>side of dark-line – <b>metal</b></p>
+                    <p><b>Right </b>side of dark-line – <b>non-metal</b></p>
+                </div>
+            </div>
+        </div>
+        <br/>
+        <div class="elements mt-5">
+            <div class="ele_table">
+                <h3 class="text-center mt-5"><u>Table of The First 20 Elements</u></h3>
+                <br/>
+                <div class="table-responsive">
+                    <table class="table table-bordered mt-5 text-center">
+                        <thead>
+                        <tr>
+                            <th scope="col">Atomic Number</th>
+                            <th scope="col">Element Name</th>
+                            <th scope="col">Symbol</th>
+                            <th scope="col">Electron per shell</th>
+                            <th scope="col">Metal / Non-metal</th>
+                            <th scope="col">Atom / Molecule</th>
+                            <th scope="col">Group</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Hydrogen</td>
+                            <td>H</td>
+                            <td>1</td>
+                            <td>Non-metal</td>
+                            <td>Molecule, H2</td>
+                            <td>Group-7</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>Helium</td>
+                            <td>He</td>
+                            <td>2</td>
+                            <td>Non-metal</td>
+                            <td>Atom</td>
+                            <td>Group-8</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td>Lithium</td>
+                            <td>Li</td>
+                            <td>2, 1</td>
+                            <td>Metal</td>
+                            <td>Atom</td>
+                            <td>Group-1</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">4</th>
+                            <td>Beryllium</td>
+                            <td>Be</td>
+                            <td>2, 2</td>
+                            <td>Metal</td>
+                            <td>Atom</td>
+                            <td>Group-2</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">5</th>
+                            <td>Boron</td>
+                            <td>B</td>
+                            <td>2, 3</td>
+                            <td>Non-metal (metalloid)</td>
+                            <td>Atom</td>
+                            <td>Group-3</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">6</th>
+                            <td>Carbon</td>
+                            <td>C</td>
+                            <td>2, 4</td>
+                            <td>Non-metal</td>
+                            <td>Atom</td>
+                            <td>Group-4</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">7</th>
+                            <td>Nitrogen</td>
+                            <td>N</td>
+                            <td>2, 5</td>
+                            <td>Non-metal</td>
+                            <td>Molecule, N2</td>
+                            <td>Group-5</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">8</th>
+                            <td>Oxygen</td>
+                            <td>O</td>
+                            <td>2, 6</td>
+                            <td>Non-metal</td>
+                            <td>Molecule, O2</td>
+                            <td>Group-6</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">9</th>
+                            <td>Fluorine</td>
+                            <td>F</td>
+                            <td>2, 7</td>
+                            <td>Non-metal</td>
+                            <td>Molecule, F2</td>
+                            <td>Group-7</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">10</th>
+                            <td>Neon</td>
+                            <td>Ne</td>
+                            <td>2, 8</td>
+                            <td>Non-metal</td>
+                            <td>Atom</td>
+                            <td>Group-8</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">11</th>
+                            <td>Sodium</td>
+                            <td>Na</td>
+                            <td>2, 8, 1</td>
+                            <td>Metal</td>
+                            <td>Atom</td>
+                            <td>Group-1</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">12</th>
+                            <td>Magnesium</td>
+                            <td>Mg</td>
+                            <td>2, 8, 2</td>
+                            <td>Metal</td>
+                            <td>Atom</td>
+                            <td>Group-2</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">13</th>
+                            <td>Aluminum</td>
+                            <td>Al</td>
+                            <td>2, 8, 3</td>
+                            <td>Metal</td>
+                            <td>Atom</td>
+                            <td>Group-3</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">14</th>
+                            <td>Silicon</td>
+                            <td>Si</td>
+                            <td>2, 8, 4</td>
+                            <td>Non-metal (metalloid)</td>
+                            <td>Atom</td>
+                            <td>Group-4</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">15</th>
+                            <td>Phosphorus</td>
+                            <td>P</td>
+                            <td>2, 8, 5</td>
+                            <td>Non-metal</td>
+                            <td>Molecule, P4</td>
+                            <td>Group-5</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">16</th>
+                            <td>Sulfur</td>
+                            <td>S</td>
+                            <td>2, 8, 6</td>
+                            <td>Non-metal</td>
+                            <td>Molecule, S8</td>
+                            <td>Group-6</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">17</th>
+                            <td>Chlorine</td>
+                            <td>Cl</td>
+                            <td>2, 8, 7</td>
+                            <td>Non-metal</td>
+                            <td>Molecule, Cl2</td>
+                            <td>Group-7</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">18</th>
+                            <td>Argon</td>
+                            <td>Ar</td>
+                            <td>2, 8, 8</td>
+                            <td>Non-metal</td>
+                            <td>Atom</td>
+                            <td>Group-8</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">19</th>
+                            <td>Potassium</td>
+                            <td>K</td>
+                            <td>2, 8, 8, 1</td>
+                            <td>Metal</td>
+                            <td>Atom</td>
+                            <td>Group-1</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">20</th>
+                            <td>Calcium</td>
+                            <td>Ca</td>
+                            <td>2, 8, 8, 2</td>
+                            <td>Metal</td>
+                            <td>Atom</td>
+                            <td>Group-2</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="periodic_content">
+                <div class="content1">
+                    <p class="mb-3 mt-5">
+                        Electronic structure
+                    </p>
+                    <p>
+                        First shell – 2 electrons<br/>
+                        Second shell – 8 electrons<br/>
+                        Third shell – 8 electrons<br/>
+                        Fourth shell – 2 electrons
+                    </p>
+                </div>
+                <div class="content2 mt-4">
+                    <p class="pt-5">
+                        Want to give electrons - metal<br/>
+                        Want to accept electrons - non-metal<br/>
+                        Both metal & non-metal properties - metalloid
+                    </p>
+                </div>
+            </div>
+        </div>
+        <br/>
+        <br/>
+        <br/>
+        <div class="nacl_bond mt-5 mb-5">
+            <div class="na">
+                <p class="fw-bold mb-3 fst-italic">Na (Sodium)</p>
+                <p class="">+11p + -11e</p>
+                <p>Na atom = 0 charges</p>
+                <p class="">Loses 1 electron</p>
+                <p>+11p + -10e = +1</p>
+                <p>Na+ (sodium ion) – cation</p>
+            </div>
+            <figure class="fig">
+                <img src="../images/nacl.png" alt="Ionic bond between NaCl" title="Ionic bond between NaCl" class="rounded nacl_pic"/>
+                <figcaption>Ionic bond between NaCl</figcaption>
+            </figure>
+            <div class="cl">
+                <p class="fw-bold mb-3 fst-italic">Cl (Chlorine)</p>
+                <p class="">+17p + -17e</p>
+                <p>Cl atom = 0 charges</p>
+                <p class="">Accept 1 electron</p>
+                <p>+17p + -18e = -1</p>
+                <p>Cl- (Chlorine ion) – anion</p>
+            </div>
+        </div>
+
+        <p class="note pop-note text-center py-1 my-4 mt-5 mx-auto"><b>Cation</b> - a positively charged ion (Na+, Mg2+)<br/><b>Anion</b> - a negatively charged ion (Cl-)
+        </p>
+
+        <div class="ionic_bond">
+            <figure class="leftfig">
+                <img src="../images/ionic.png" alt="Ionic Bond" title="Ionic Bond" class="rounded ionic_pic">
+                <figcaption>Iconic Bond</figcaption>
+            </figure>
+            <div class="ionic_content pb-5">
+                <p>Oppositely charged particles attract each other.</p>
+                <p class="my-5">The attractive force between those 2 particles - the electrostatic force of attraction.</p>
+                <p>An ionic bond is an electrostatic force that holds ions together in an ionic compound.</p>
+                <p class="my-5">An ionic compound has a crystalline form, and a high melting/boiling point because the electrostatic force between the ions is very strong that it needs a lot of energy to break it.</p>
+                <p>Ionic compounds conduct electricity only when they are molten or dissolved in water.</p>
+                <p class="ms-3">- Because the ions are firmly held and are not free to move in the solid state.</p>
+            </div>
+        </div>
+
+        <div class="covalent_bond">
+            <figure class="rightfig">
+                <img src="../images/covalent1.png" alt="Covalent Bond" title="Covalent Bond" class="rounded covalent_pic">
+                <figcaption>Covalent bond in CO2</figcaption>
+            </figure>
+            <div class="covalent_content pb-5">
+                <h3 class="mb-5"><u>Covalent Bond</u></h3>
+                <p>- Found between non-metals</p>
+                <p class="my-4">- Electrons are shared - not totally given.</p>
+                <p>2 electrons from the outermost shell of each atom are shared.</p>
+                <p class="">Full electrons (8) in the outermost shell of “O” & “C”.</p>
+            </div>
+        </div>
+
+        <div class="covalent_bond2 row mt-5">
+            <h4 class="fst-italic mb-5">Molecules are also held by a covalent bond.</h4>
+            <figure class="leftfig col-lg-6 col-sm-12">
+                <img src="../images/covalent2.png" alt="Covalent Bond in O2" title="Covalent Bond in O2" class="rounded covalent_o2 mx-auto d-block">
+                <figcaption class="text-center">Covalent bond in O2</figcaption>
+            </figure>
+            <figure class="col-lg-6 col-sm-12">
+                <img src="../images/covalent3.png" alt="Covalent Bond in Cl2" title="Covalent Bond in Cl2" class="rounded covalent_cl2 mx-auto d-block">
+                <figcaption class="text-center">Covalent bond in Cl2</figcaption>
+            </figure>
+        </div>
+
+        <div class="metallic">
+            <figure class="leftfig">
+                <img src="../images/metallic.png" alt="Metallic Bond" title="Metallic Bond" class="rounded metallic_pic">
+                <figcaption>Metallic Bond</figcaption>
+            </figure>
+            <div class="metallic_content pb-5">
+                <h3 class="mb-5"><u>Metallic Bond</u></h3>
+                <p class="mb-3">Only found in metals.</p>
+                <p class="mb-2">Electrons jump out from the outermost shell causing metal cations and free electrons.</p>
+                <p class="mt-3">Form between metal cations and movable free electrons / delocalized electrons / sea of electrons.</p>
+                <p class="mt-3">Metals can <b>conduct electricity</b> cause of the free electrons they have which are electric charge carriers.</p>
+                <p class="mt-3">Metals are hard & strong with high melting / boiling point</p>
+                <p class="ms-3">- Cause of the <b>strong attraction </b>between cations and electrons.</p>
+            </div>
+        </div>
+
+        <hr/>
+
+        <div class="gp1_metals" id="gp1">
+            <figure class="rightfig">
+                <img src="../images/gp1metals.jpeg" alt="Group-1" title="Group-1" class="rounded gp1_pic">
+                <figcaption>Group-1 Metals</figcaption>
+            </figure>
+            <div class="atom_content pb-5">
+                <h2 class="mb-5 fw-bold">Group-1 (Alkali metals)</h2>
+                <p class="mb-3 fst-italic">Always want to give 1 electron from the outermost shell.</p>
+                <p class="mb-2">Li	- Lithium<br/>
+                    Na	- Sodium<br/>
+                    K	- Potassium<br/>
+                    Rb	- Rubidium<br/>
+                    Cs	- Caesium</p>
+                <p class="mt-3">Reactivity, atomic number, mass number, density <b>increase </b>as they go down the group.</p>
+                <p class="mt-3">Melting point, boiling point <b>decrease </b>as they go down the group.</p>
+                <p class="note pop-note text-center py-1 my-4 mx-auto">** Group-1 elements are never found as free elements in nature as they are highly reactive.</p>
+            </div>
+        </div>
+
+        <div class="gp7" id="gp7">
+            <figure class="rightfig">
+                <img src="../images/gp7.png" alt="Group-7" title="Group-7" class="rounded gp7_pic">
+                <figcaption>Group-7 Non-metals</figcaption>
+            </figure>
+            <div class="gp7_content pb-5">
+                <h2 class="mb-5 fw-bold">Group-7 (Halogens) - Non-metals</h2>
+                <p class="mb-3 fst-italic">Always want to receive 1 electron.</p>
+                <p class="mb-2">F	- Fluorine	- gas (pale yellow)<br/>
+                    Cl	- Chlorine	- gas (yellowish green)<br/>
+                    Br	- Bromine	- volatile liquid (reddish brown)<br/>
+                    I	- Iodine	- solid</p>
+                <p class="mt-3">Atomic number, mass number, density, melting, boiling point <b>increase </b>as they go down the group.</p>
+                <p class="mt-3">Reactivity <b>decrease </b>as they go down the group.</p>
+                <p class="mt-3">** Group-1 elements are never found as free elements in nature as they are highly reactive.</p>
+                <p class="note pop-note text-center py-1 my-4 mx-auto">** Group-1 elements are never found as free elements in nature as they are highly reactive.</p>
+            </div>
+        </div>
+
+        <div class="gp8 pb-5" id="gp8">
+            <figure class="rightfig">
+                <img src="../images/gp8.jpg" alt="Group-8" title="Group-8" class="rounded gp8_pic">
+                <figcaption>Group-7 Non-metals</figcaption>
+            </figure>
+            <div class="gp8_content pb-5">
+                <h2 class="mb-5 fw-bold">Group-8 (Noble gases)</h2>
+                <p class="mb-3 fst-italic">Inert gases - unreactive gases<br/>
+                    Outermost shells are full.</p>
+                <p class="mb-2">He	- Helium<br/>
+                    Ne	- Neon<br/>
+                    Ar	- Argon<br/>
+                    Kr	- Krypton<br/>
+                    Xe	- Xenon</p>
+                <p class="my-3">Atomic number, mass number, melting, boiling point <b>increase </b>as they go down the group.</p>
+                <br/>
+                <p class="note pop-note text-center py-1 my-4 mx-auto">** They glow when electricity passes through them.<br/>
+                    ** Ar, Kr, and Xe can react only when they are forced to react under some circumstances. Because the electron attraction to the nucleus is weak.</p>
+            </div>
+        </div>
+    </div>
+    <!-- Chem Unit-1 END -->
+    
+    <!-- FOOTER_START -->
+    <div class="footer">
+        <div class="footer-wrap">
+            <div class="logo-wrap">
+                <div class="line">
+                </div>
+                <div class="logo">
+                    <a href="#"><img src="../images/AcademicDiary_Logo.png" alt="logo_footer" class="logo_footer"></a>
+                </div>
+                <div class="line">
+                </div>
+            </div>
+            <div class="footer_body">
+                <div class="links-wrap">
+                    <div class="links">
+                        <div class="links1">
+                            <a href="../index.html">Home</a><br />
+                            <a href="subjects.html">Subjects</a><br />
+                            <a href="events.html">Events</a>
+                        </div>
+                        <div class="links2">
+                            <a href="tools.html">Tools</a><br />
+                            <a href="about.html">About</a><br />
+                            <a href="../References.docx">Citations</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="social-media">
+                    <div class="icons">
+                        <a href="https://www.facebook.com/" class="text-light"><i
+                                class="fa-brands fa-facebook social-icons"></i></a>
+                        <a href="https://www.twitter.com/" class="text-light"><i
+                                class="fa-brands fa-twitter social-icons"></i></a>
+                        <a href="https://www.youtube.com/" class="text-light"><i
+                                class="fa-brands fa-youtube social-icons"></i></i></a>
+                        <a href="https://www.linkedin.com/" class="text-light"><i
+                                class="fa-brands fa-linkedin-in social-icons"></i></a>
+                    </div>
+                    <div class="line_vertical">
+                    </div>
+                </div>
+            </div>
+
+            <div class="msg-wrap">
+                <div class="msg_title">
+                    <label for="messageus">Message us!</label>
+                </div>
+                <div class="msg">
+                    <div class="input-group">
+                        <input type="text" type="reset" class="form-control footer-input" placeholder="Your message.">
+                        <button class="btn btn-outline-light" type="button" id="button-addon2">Send</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom text-center">
+                <div class="first-box">
+                    <a href="#">Terms & Conditions</a>
+                    <a href="#">Privacy Policy</a>
+                </div>
+                <div class="last-box">
+                    <a href="#">Copyright © 2023 AcademicDiary · All Rights Reserved</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- FOOTER_END -->
+
+    <script src="../javascript.js">
+
+    </script>
+</body>
+
+</html>
